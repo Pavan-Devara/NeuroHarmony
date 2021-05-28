@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.login.SocialProfile.LifeStyleInfo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/LifeStyleInfoLinearLayout"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/heading_lifestyle_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/mobile1"
+            android:text="Lifestyle Info"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textSize="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/diet_subheading"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:fontFamily="@font/mobile1"
+            android:text="Dietary Preference"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textAllCaps="true"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/heading_lifestyle_info" />
+
+        <Spinner
+            android:id="@+id/dietSpinner"
+            style="@android:style/Widget.Material.Light.Spinner.Underlined"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/diet_subheading" />
+
+        <TextView
+            android:id="@+id/smoke_subheading"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/mobile1"
+            android:text="Do you smoke?"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dietSpinner" />
+
+        <Spinner
+            android:id="@+id/smokeSpinner"
+            style="@android:style/Widget.Material.Light.Spinner.Underlined"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/smoke_subheading" />
+
+        <TextView
+            android:id="@+id/alcohol_subheading"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:fontFamily="@font/mobile1"
+            android:text="Do you consume alcohol?"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textAllCaps="true"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/smokeSpinner" />
+
+        <Spinner
+            android:id="@+id/alcoholSpinner"
+            style="@android:style/Widget.Material.Light.Spinner.Underlined"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alcohol_subheading" />
+
+        <TextView
+            android:id="@+id/pet_subheading"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/mobile1"
+            android:text="Do you own a pet?"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alcoholSpinner" />
+
+        <Spinner
+            android:id="@+id/petSpinner"
+            style="@android:style/Widget.Material.Light.Spinner.Underlined"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pet_subheading" />
+
+        <TextView
+            android:id="@+id/sunglass_subheading"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:fontFamily="@font/mobile1"
+            android:text="Do you wear prescription sunglasses?"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textAllCaps="true"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/petSpinner" />
+
+        <Spinner
+            android:id="@+id/sunglassSpinner"
+            style="@android:style/Widget.Material.Light.Spinner.Underlined"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sunglass_subheading" />
+
+        <TextView
+            android:id="@+id/workpostmarriage_subheading"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/mobile1"
+            android:text="Do you intend to continue working post marriage?"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sunglassSpinner" />
+
+        <Spinner
+            android:id="@+id/workpostmarriageSpinner"
+            style="@android:style/Widget.Material.Light.Spinner.Underlined"
+            android:layout_width="349dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/workpostmarriage_subheading" />
+
+        <Button
+            android:id="@+id/SaveReligiousInfobutton"
+            android:layout_width="340dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_button"
+            android:text="SAVE &amp; CONTINUE"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+
+android:background="@color/white"
+tools:context=".ui.login.AfilliateWorkFlow.AffiliateDashboard">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/relative_affiliate_trasnsactions"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/terms_affiliate_transactions"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_arrow_24dp"/>
+
+            <TextView
+                android:id="@+id/yerms_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/background"
+                android:fontFamily="@font/semibold"
+                android:text="Transactions"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/total_ammount_heading_due"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/semibold"
+                android:text="Total Due"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/total_ammount_affiliate_due"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/total_ammount_heading_due"
+                android:layout_gravity="end"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/mont_bold"
+                android:text=""
+                android:textColor="@color/golden_yellow"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/relative_total_credit"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/total_ammount_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/semibold"
+            android:text="Total Credited"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/total_ammount_affiliate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/total_ammount_heading"
+            android:layout_gravity="end"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/mont_bold"
+            android:text=""
+            android:textColor="@color/golden_yellow"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="150dp">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:id="@+id/view_purple"
+            android:background="@color/background"
+            android:layout_height="75dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/view_purple"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/name_affiliater"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/affiliater_image"
+            android:fontFamily="@font/bold"
+            android:text=""
+            android:textSize="20dp"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/affiliater_image"
+            android:background="@mipmap/profile_pic_placeholder"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/affilater_id"
+            android:textSize="17dp"
+            android:layout_below="@+id/name_affiliater"
+            android:layout_toRightOf="@+id/affiliater_image"
+            android:fontFamily="@font/medium"
+            android:textColor="#000000"/>
+
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#7E7E7E"
+            android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear_headings_affiliate"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:weightSum="10"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:text="Name"
+                android:textColor="#000000"
+                android:gravity="start"
+                android:maxLines="2"
+                android:layout_weight="2"
+                android:fontFamily="@font/medium"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:text="Due On"
+                android:layout_weight="2"
+                android:gravity="start"
+                android:textColor="#000000"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/medium"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:text="Credited On"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/medium"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:text="Amount"
+                android:textColor="#000000"
+                android:layout_weight="2"
+                android:layout_marginLeft="5dp"
+                android:gravity="start"
+                android:fontFamily="@font/medium"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:text="credited"
+                android:textColor="@color/background"
+                android:gravity="center"
+                android:layout_weight="1.5"
+                android:id="@+id/credited_ammount_referal"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rounded_button"
+                android:textAllCaps="true"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:fontFamily="@font/semibold"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:text="Status"
+                android:textColor="#000000"
+                android:gravity="start"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="2"
+                android:layout_marginRight="5dp"
+                android:textAllCaps="false"
+                android:visibility="visible"
+                android:fontFamily="@font/medium"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/affliate_list_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Nothing to show here!"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:id="@+id/nothinghere"
+        android:textColor="#555555"
+        />
+</LinearLayout>
+
+</LinearLayout>

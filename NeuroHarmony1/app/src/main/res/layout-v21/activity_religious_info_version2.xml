@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.login.SocialProfile.ReligiousInfoVersion2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/religiouInfoLinearLayout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/heading_religioud_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/semibold"
+            android:text="Religious Info"
+            android:layout_weight="1"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/religion_subheading"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:fontFamily="@font/semibold"
+            android:text="Religion"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textAllCaps="true"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/heading_religioud_info" />
+
+
+
+        <Button
+            android:id="@+id/religionSpinner"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="Select"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:drawableRight="@drawable/down_arrow_resize"
+            android:drawableBottom="@drawable/white_line" />
+
+
+
+        <TextView
+            android:id="@+id/caste_subheading"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/semibold"
+            android:text="Caste"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/religionSpinner" />
+
+        <Button
+            android:id="@+id/casteSpinner"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="Select"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:background="@color/background"
+            android:textAllCaps="false"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:drawableRight="@drawable/down_arrow_resize"
+            android:drawableBottom="@drawable/white_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/religion_subheading"/>
+
+
+        <TextView
+            android:id="@+id/subcaste_subheading"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/semibold"
+            android:layout_gravity="center_horizontal"
+            android:text="Sub-Caste"
+            android:textAllCaps="true"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:visibility="visible"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/casteSpinner" />
+
+        <EditText
+            android:id="@+id/subCasteSpinner"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/medium"
+            android:textColorHint="#C5B5D3"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#C5B5D3"
+            android:visibility="visible"
+            android:layout_weight="1"
+            android:hint="Enter your sub-caste"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subcaste_subheading" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:id="@+id/agreeReligiousnessSubheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/semibold"
+                android:text="@string/Deep_religious_person"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subCasteSpinner" />
+
+            <TextView
+                android:id="@+id/howMuchDoYouAgree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/medium"
+                android:text="@string/agreeness"
+                android:textSize="13dp"
+                android:layout_weight="0"
+                android:gravity="bottom"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/agreeReligiousnessSubheading" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/AgreeOnReligionSpinner"
+            android:spinnerMode="dialog"
+            style="@android:style/Widget.Material.Light.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/white"
+            android:visibility="visible"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/agreeReligiousnessSubheading" />
+
+
+
+        <TextView
+            android:id="@+id/VisitingTempleSubheading"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:fontFamily="@font/semibold"
+            android:text="How often do you visit a temple or any place of worship?"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AgreeOnReligionSpinner" />
+
+
+        <Spinner
+            android:id="@+id/VisitingTempleSpinner"
+            android:spinnerMode="dialog"
+            style="@android:style/Widget.Material.Light.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/white"
+            android:visibility="visible"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/VisitingTempleSubheading" />
+
+        <LinearLayout
+            android:id="@+id/RelativeLayoutHoroscope"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/VisitingTempleSpinner">
+
+            <EditText
+                android:id="@+id/UploadHoroscopeEditText"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:ems="10"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:fontFamily="@font/light"
+                android:inputType="textPersonName"
+                android:text="Upload your horoscope"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/UploadHorscopeButton"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/rounded_button"
+                android:text="Upload"
+                android:layout_marginBottom="1dp"
+                android:layout_above="@+id/formatOfPdf"
+                android:layout_alignRight="@+id/UploadHoroscopeEditText"
+                android:textAllCaps="false"
+                android:visibility="visible" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/formatOfPdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="25dp"
+            android:layout_gravity="right"
+            android:layout_alignRight="@+id/UploadHoroscopeEditText"
+            android:layout_below="@+id/UploadHoroscopeEditText"
+            android:text="pdf format, max size 3MB"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:fontFamily="@font/light" />
+
+
+
+
+        <Button
+            android:id="@+id/SaveReligiousInfobutton"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_button"
+            android:text="SAVE &amp; CONTINUE"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+</ScrollView>

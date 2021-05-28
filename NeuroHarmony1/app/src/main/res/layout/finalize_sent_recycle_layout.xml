@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="7dp"
+        android:background="@drawable/rounded_white_option_button">
+
+
+        <RelativeLayout
+            android:id="@+id/finalize_user_info_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_white_option_button">
+
+
+
+            <ImageView
+                android:id="@+id/finalize_matched_user_photo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/profile_pic_placeholder" />
+
+
+
+            <Button
+                android:id="@+id/finalize_revoke_interest_button"
+                android:layout_width="wrap_content"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/finalize_matched_user_details"
+                android:layout_alignStart="@+id/finalize_matched_user_details"
+                android:layout_alignLeft="@+id/finalize_matched_user_details"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="true"
+                android:textSize="13dp"
+                android:textColor="@color/background"
+                android:fontFamily="@font/semibold"
+                android:layout_marginBottom="20dp"
+                android:visibility="visible"
+                android:layout_weight="1"
+                android:background="@drawable/light_pink_button"
+                android:text="REVOKE" />
+
+
+
+            <TextView
+                android:id="@+id/finalize_matched_user_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/finalize_matched_user_name"
+                android:layout_alignStart="@+id/finalize_matched_user_name"
+                android:layout_alignLeft="@+id/finalize_matched_user_name"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/regular"
+                android:text="24 F Single Hindu Nair"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/finalize_matched_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/finalize_matched_user_photo"
+                android:layout_toRightOf="@+id/finalize_matched_user_photo"
+                android:layout_weight="1"
+                android:fontFamily="@font/semibold"
+                android:text="Serin"
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

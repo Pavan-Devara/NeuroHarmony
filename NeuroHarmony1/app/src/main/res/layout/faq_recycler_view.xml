@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+
+    <TextView
+        android:id="@+id/faq_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@id/faq_plus"
+        android:layout_toStartOf="@+id/faq_plus"
+        android:layout_toLeftOf="@+id/faq_plus"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:text=""
+        android:padding="10dp"
+        android:textSize="17dp" />
+
+
+    <ImageView
+        android:id="@+id/faq_plus"
+        android:layout_alignTop="@id/faq_plus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="5dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/plus" />
+
+    <ImageView
+        android:id="@+id/faq_minus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/faq_plus"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:src="@mipmap/minus"
+        android:visibility="invisible" />
+
+
+    <TextView
+        android:id="@+id/faq_answer"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/golden_yellow"
+        android:textSize="17dp"
+        android:padding="10dp"
+        android:layout_below="@id/faq_question"/>
+
+</RelativeLayout>

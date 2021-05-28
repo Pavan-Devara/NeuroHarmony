@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.login.ViewMatchReportScreen">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/back_six_reports"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_arrow_24dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/medium"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+                android:text="Match Reports"
+                android:textColor="@android:color/white"/>
+        </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/neuro_report_matcheduser"
+        android:layout_width="match_parent"
+        android:background="@drawable/round_shaded_button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/bold"
+        android:textSize="17dp"
+        android:layout_height="wrap_content"
+        android:text="Neuro Report"
+        android:textAllCaps="false"/>
+
+
+    <Button
+        android:id="@+id/distance_report_matcheduser"
+        android:layout_width="match_parent"
+        android:background="@drawable/round_shaded_button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bold"
+        android:textSize="17dp"
+        android:layout_height="wrap_content"
+        android:text="Neuro Profile Distance Report"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/desire_report_matcheduser"
+        android:layout_width="match_parent"
+        android:background="@drawable/round_shaded_button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bold"
+        android:textSize="17dp"
+        android:layout_height="wrap_content"
+        android:text="Core Belief Match Report"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/corebelief_mat_report_matcheduser"
+        android:layout_width="match_parent"
+        android:background="@drawable/round_shaded_button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bold"
+        android:textSize="17dp"
+        android:layout_height="wrap_content"
+        android:text="CoreBelief Report"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/cbdistance_matched_report_matcheduser"
+        android:layout_width="match_parent"
+        android:background="@drawable/round_shaded_button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bold"
+        android:textSize="17dp"
+        android:layout_height="wrap_content"
+        android:text="Core Belief Distance Report"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/download_report_matcheduser"
+        android:layout_width="match_parent"
+        android:background="@drawable/round_shaded_button"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bold"
+        android:textSize="17dp"
+        android:layout_height="wrap_content"
+        android:text="Download Report"
+        android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/complete_match_button"
+            android:layout_width="match_parent"
+            android:background="@drawable/round_shaded_button"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bold"
+            android:textSize="17dp"
+            android:layout_height="wrap_content"
+            android:text="Complete Match"
+            android:textAllCaps="false"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

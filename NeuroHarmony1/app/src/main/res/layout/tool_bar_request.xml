@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:id="@+id/toolBarRequest"
+    app:titleTextColor="@android:color/white"
+    android:elevation="4dp"
+    android:theme="@style/AppTheme" >
+
+    <ImageButton
+        android:id="@+id/menu_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/bar_resize" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request"
+        android:fontFamily="@font/bold"
+        android:textColor="@color/white"
+        android:layout_marginLeft="100dp"
+        android:textSize="17dp"/>
+
+</androidx.appcompat.widget.Toolbar>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.login.ViewPartnerProfile.ViewPartnerProfileLifestyleFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/partner_profile_font_color"
+            android:background="@android:color/transparent"
+            android:text="Dietary Preference"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/dietary_preference_partner_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont_semibold"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:text="Dietary Preference"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/partner_profile_font_color"
+            android:background="@android:color/transparent"
+            android:text="Smoking Habit"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/smoking_habit_partner_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont_semibold"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:text="Smoking Habit"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/partner_profile_font_color"
+            android:background="@android:color/transparent"
+            android:text="Drinking Habit"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/drinking_habit_partner_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont_semibold"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:text="Drinking Habit"
+            android:textSize="17sp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/partner_profile_font_color"
+            android:background="@android:color/transparent"
+            android:text="Owns a pet?"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/owns_a_pet_partner_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont_semibold"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:text="Owns a pet?"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/partner_profile_font_color"
+            android:background="@android:color/transparent"
+            android:text="Wears prescription glasses?"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/wear_presciption_glasses_partner_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont_semibold"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:text="Wears Prescription Glasses"
+            android:textSize="17sp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/partner_profile_font_color"
+            android:background="@android:color/transparent"
+            android:text="Intend to work post marriage?"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/intend_to_work_partner_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/mont_semibold"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:text="Intend to work post marriage?"
+            android:textSize="17sp"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

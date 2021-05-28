@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.login.TransactionDetailsScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="Transaction Successful!"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/light"
+            android:text="@string/neuro_tokens"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="17dp"
+            android:layout_below="@id/textView9"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:inputType="number"
+            android:textColor="@color/golden_yellow"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textView10"
+            android:layout_marginTop="20dp"
+            android:textSize="80dp"
+            android:fontFamily="@font/mobile1"/>
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:text="Available Token Balance"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:layout_below="@id/textView11"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_height="55dp"
+            android:background="@drawable/rounded_button"
+            android:layout_below="@+id/textView12"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:text="OK"
+            android:textSize="20dp"
+            android:textAllCaps="false"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

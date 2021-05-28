@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".ui.login.PaymentFlow.PaymentDoNotGoBackScreen">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Transaction being processed please wait..."
+        android:textSize="17dp"
+        android:gravity="center"
+        android:layout_marginTop="150dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Please do not Press 'Refresh' or 'Back' button"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"/>
+
+</LinearLayout>

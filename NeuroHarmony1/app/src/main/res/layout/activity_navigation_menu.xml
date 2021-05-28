@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:background="@color/light_dark"/>
+
+    <include
+        layout="@layout/activity_home_page1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        app:itemTextColor="@android:color/white"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/nav_menu">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:fillViewport="true"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:layout_marginBottom="75dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.navigation.NavigationView
+                    android:id="@+id/nav_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/background"
+                    android:paddingBottom="25dp"
+                    app:itemTextColor="@android:color/white"
+                    android:layout_gravity="start"
+                    android:fitsSystemWindows="true"
+                    app:headerLayout="@layout/nav_header"
+                    app:elevation="0dp"
+                    app:menu="@menu/nav_menu">
+
+
+
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_gravity="end"
+                        android:layout_height="fill_parent"
+                        android:background="@color/light_dark" />
+                </com.google.android.material.navigation.NavigationView>
+
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/nav_signout"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_button"
+                android:text="Sign Out"
+                android:textSize="18dp"/>
+
+
+        </LinearLayout>
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

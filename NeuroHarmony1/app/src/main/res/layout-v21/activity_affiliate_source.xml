@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".ui.login.AfilliateWorkFlow.AffiliateSource">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NH Source Details"
+        android:fontFamily="@font/bold"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="30dp"
+        android:background="@color/background"
+        >
+
+
+    <TextView
+        android:id="@+id/source_heading"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/bold"
+        android:text="Where did you hear about us?"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:visibility="visible"
+        />
+
+    <Spinner
+        android:id="@+id/source_spinner"
+        style="@android:style/Widget.Material.Light.Spinner.Underlined"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="10dp"
+        android:spinnerMode="dialog"
+        android:layout_below="@+id/source_heading"
+        android:layout_marginRight="20dp"
+        android:entries="@array/individual"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:backgroundTint="#AFAFAF"
+        android:visibility="visible"
+        />
+
+        <TextView
+            android:id="@+id/agent_name_text_view"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:layout_below="@+id/source_spinner"
+            android:paddingLeft="5dp"
+            android:fontFamily="@font/bold"
+            android:text="Agent name"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:textAllCaps="true"
+            android:visibility="invisible"
+            />
+
+        <EditText
+            android:id="@+id/agent_name_edittext"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_below="@id/agent_name_text_view"
+            android:maxLines="1"
+            android:inputType="text"
+            android:fontFamily="@font/regular"
+            android:hint="Enter your agent name"
+            android:textColorHint="#C5B5D3"
+            android:backgroundTint="#AFAFAF"
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/agent_number_text_view"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/agent_name_edittext"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:paddingLeft="5dp"
+            android:fontFamily="@font/bold"
+            android:text="Agent Mobile number"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:textAllCaps="true"
+            android:visibility="invisible"
+            />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/agent_number_text_view"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/agent_nmuber_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:paddingLeft="50dp"
+            android:inputType="number"
+            android:fontFamily="@font/regular"
+            android:hint="Enter your agent mobile number"
+            android:textColorHint="#C5B5D3"
+            android:backgroundTint="#AFAFAF"
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            />
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/country_code_picker_affiliate"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:clickable="true"
+                android:layout_marginTop="5dp"
+                android:visibility="invisible"
+                android:layout_weight="1"
+                app:ccp_autoDetectCountry="false"
+                />
+
+        </FrameLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="SAVE &amp; Continue"
+            android:id="@+id/save_button_affiliate"
+            android:fontFamily="@font/bold"
+            android:textColor="@color/background"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp" />
+    </RelativeLayout>
+
+</LinearLayout>

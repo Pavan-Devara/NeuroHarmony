@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.BioUpdateActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bioinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/semibold"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:text="Personal Profile"
+            android:textSize="17dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/semibold"
+            android:textSize="15dp"
+            android:text="FIRST NAME"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bioinfo" />
+        <EditText
+            android:id="@+id/first_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:fontFamily="@font/medium"
+            android:textColorHint="#C5B5D3"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#C5B5D3"
+            android:inputType="textPersonName"
+            android:hint="Enter your first name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstname"
+            />
+
+        <TextView
+            android:id="@+id/middlename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/white"
+            android:paddingLeft="5dp"
+            android:fontFamily="@font/semibold"
+            android:textSize="15dp"
+            android:text="MIDDLE NAME"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstname"/>
+
+        <EditText
+            android:id="@+id/middle_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#C5B5D3"
+            android:textColor="#FFFFFF"
+            android:paddingBottom="15dp"
+            android:fontFamily="@font/semibold"
+            android:backgroundTint="#C5B5D3"
+            android:inputType="textPersonName"
+            android:hint="Enter your middle name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/middlename"/>
+
+        <TextView
+            android:id="@+id/lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/white"
+            android:paddingLeft="5dp"
+            android:text="LAST NAME"
+            android:fontFamily="@font/semibold"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/middle_name_edit"
+            />
+
+        <EditText
+            android:id="@+id/last_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:fontFamily="@font/medium"
+            android:textColorHint="#C5B5D3"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#C5B5D3"
+            android:inputType="textPersonName"
+            android:hint="Enter your last name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lastname"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:id="@+id/gender"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf= "@+id/last_name_edit">
+            <RadioButton
+                android:layout_width="10dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:button="@drawable/male_image_radio"
+                android:textColor="@color/white"
+                android:fontFamily="@font/light"
+                android:layout_marginLeft="50dp"
+                android:id="@+id/checkBoxmale1"
+                android:checked="false"
+                android:text="Male"
+                />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:button="@drawable/female_image_radio"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/light"
+                android:layout_marginLeft="-50dp"
+                android:id="@+id/checkBoxfemale1"
+                android:checked="false" />
+
+        </RadioGroup>
+
+
+
+
+        <TextView
+            android:id="@+id/alternate_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/white"
+            android:text="ALTERNATE MOBILE NUMBER"
+            android:fontFamily="@font/semibold"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gender"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/alt_num"
+            >
+
+        <EditText
+            android:id="@+id/alternate_mobile_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#C5B5D3"
+            android:paddingBottom="15dp"
+            android:backgroundTint="#C5D5D3"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            android:maxLength="20"
+            android:fontFamily="@font/medium"
+            android:hint="Enter alternate mobile number"
+            android:inputType="number"
+            android:paddingLeft="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alternate_mobile"
+            />
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/country_code_picker_alt_num"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                app:ccp_autoDetectCountry="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.130"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/alternate_mobile" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/fathername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="5dp"
+            android:text="FATHER'S NAME"
+            android:fontFamily="@font/semibold"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alt_num"/>
+
+        <EditText
+            android:id="@+id/father_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#C5B5D3"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/medium"
+            android:paddingBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:inputType="textPersonName"
+            android:backgroundTint="#C5B5D3"
+            android:hint="Enter your father's name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fathername"/>
+        <TextView
+            android:id="@+id/dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="5dp"
+            android:text="DATE OF BIRTH"
+            android:fontFamily="@font/semibold"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/father_name_edit"/>
+
+        <EditText
+            android:id="@+id/pickDateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#C5B5D3"
+            android:textColor="#FFFFFF"
+            android:paddingBottom="15dp"
+            android:textSize="17dp"
+            android:backgroundTint="#C5B5D3"
+            android:hint="YYYY-MM-DD"
+            android:cursorVisible="false"
+            android:inputType="date"
+            android:focusable="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dob"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/height_weight">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/height"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:textColor="#FFFFFF"
+                android:paddingLeft="1dp"
+                android:text="HEIGHT [CMS]"
+                android:fontFamily="@font/semibold"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.130"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pickDateBtn"
+                />
+            <TextView
+                android:id="@+id/weight"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/semibold"
+                android:paddingLeft="5dp"
+                android:text="WEIGHT [KG]"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.130"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pickDateBtn" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Spinner
+                    android:id="@+id/height_edit"
+                    style="@android:style/Widget.Material.Light.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:visibility="visible"
+                    />
+
+                <Spinner
+                    android:id="@+id/weight_edit"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    style="@android:style/Widget.Material.Light.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:visibility="visible"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/upload_pic_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textColor="#FFFFFF"
+            android:text="UPLOAD PHOTO"
+            android:paddingLeft="5dp"
+            android:fontFamily="@font/semibold"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/height_weight"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/photo_upload"
+            android:layout_below="@+id/upload_pic_heading"
+            >
+        <EditText
+            android:id="@+id/editTextupload_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/medium"
+            android:layout_marginRight="110dp"
+            android:paddingBottom="15dp"
+            android:textColorHint="#C5B5D3"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#C5B5D3"
+            android:inputType="textPersonName"
+            android:textAllCaps="false"
+            android:hint="Select your profile photo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+
+            />
+
+
+        <Button
+            android:id="@+id/upload_profile_photo"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Upload"
+            android:fontFamily="@font/bold"
+            android:textSize="15dp"
+            android:textAllCaps="false"
+            android:background="@drawable/rounded_button"
+            android:layout_marginLeft="-100dp"
+            android:layout_marginBottom="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textColor="#FFFFFF"
+            android:text="MARITAL STATUS"
+            android:paddingLeft="5dp"
+            android:fontFamily="@font/semibold"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/height_weight"
+            />
+
+        <Spinner
+            android:id="@+id/status_spinner"
+            android:layout_width="match_parent"
+            android:backgroundTint="#C5B5D3"
+            android:popupBackground="#FFFFFF"
+            style="@android:style/Widget.Material.Light.Spinner.Underlined"
+            android:layout_height="wrap_content"
+            android:entries="@array/Status_arrays"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/presentresidencecountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="5dp"
+            android:text="PRESENT RESIDENCE:COUNTRY"
+            android:fontFamily="@font/semibold"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nativecityspinner"
+            />
+
+        <Button
+            android:id="@+id/presentresidencecountryspinner"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="Select"
+            android:drawablePadding="5dp"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:background="@color/background"
+            android:textAllCaps="false"
+            android:gravity="bottom"
+            android:drawableRight="@drawable/down_arrow_resize"
+            android:drawableBottom="@drawable/white_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/presentresidencecountry"/>
+
+        <TextView
+            android:id="@+id/presentresidencestate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="5dp"
+            android:text="PRESENT RESIDENCE:STATE"
+            android:fontFamily="@font/semibold"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/presentresidencecountryspinner"
+            />
+
+        <Button
+            android:id="@+id/presentresidencestatespinner"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="Select"
+            android:drawablePadding="5dp"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:background="@color/background"
+            android:textAllCaps="false"
+            android:gravity="bottom"
+            android:drawableRight="@drawable/down_arrow_resize"
+            android:drawableBottom="@drawable/white_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/presentresidencestate"/>
+
+        <TextView
+            android:id="@+id/presentresidencecity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="5dp"
+            android:text="PRESENT RESIDENCE:CITY"
+            android:fontFamily="@font/semibold"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/presentresidencestatespinner"
+            />
+
+        <Button
+            android:id="@+id/presentresidencecityspinner"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="Select"
+            android:drawablePadding="5dp"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:background="@color/background"
+            android:textAllCaps="false"
+            android:gravity="bottom"
+            android:drawableRight="@drawable/down_arrow_resize"
+            android:drawableBottom="@drawable/white_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/presentresidencecity"/>
+
+
+        <TextView
+            android:id="@+id/nativecountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="5dp"
+            android:text="NATIVE RESIDENCE:COUNTRY"
+            android:fontFamily="@font/semibold"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/nativecountryspinner"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="Select"
+            android:drawablePadding="5dp"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:background="@color/background"
+            android:textAllCaps="false"
+            android:gravity="bottom"
+            android:drawableRight="@drawable/down_arrow_resize"
+            android:drawableBottom="@drawable/white_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nativecountry"/>
+
+        <TextView
+            android:id="@+id/nativestate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="5dp"
+            android:text="NATIVE RESIDENCE:STATE"
+            android:fontFamily="@font/semibold"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nativecountryspinner"
+            />
+
+        <Button
+            android:id="@+id/nativestatespinner"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="Select"
+            android:drawablePadding="5dp"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:background="@color/background"
+            android:textAllCaps="false"
+            android:gravity="bottom"
+            android:drawableRight="@drawable/down_arrow_resize"
+            android:drawableBottom="@drawable/white_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nativestate"/>
+
+        <TextView
+            android:id="@+id/nativecity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="5dp"
+            android:text="NATIVE RESIDENCE:CITY"
+            android:fontFamily="@font/semibold"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nativestatespinner"
+            />
+
+        <Button
+            android:id="@+id/nativecityspinner"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="Select"
+            android:drawablePadding="5dp"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            android:textAllCaps="false"
+            android:gravity="bottom"
+            android:drawableRight="@drawable/down_arrow_resize"
+            android:drawableBottom="@drawable/white_line" />
+
+
+
+        <TextView
+            android:id="@+id/mother_tounge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="5dp"
+            android:text="MOTHER TONGUE"
+            android:fontFamily="@font/semibold"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <EditText
+            android:id="@+id/mother_t_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:textColorHint="#C5B5D3"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#C5B5D3"
+            android:inputType="textPersonName"
+            android:hint="Enter your mother tongue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mother_tounge"
+            />
+
+        <Button
+            android:id="@+id/submitbio"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Save and Continue"
+            android:textSize="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/bold"
+            android:textColor="#3C1A5B"
+            android:layout_marginBottom="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.130"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mother_t_text"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>

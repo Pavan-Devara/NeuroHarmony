@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:theme="@style/Theme.MaterialComponents"
+    tools:context=".ui.login.SocialPreferences.SocialPreference">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/socialfilterLinearLayout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/heading_socialfilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/semibold"
+            android:text="Social Preferences"
+            android:layout_weight="1"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            android:textSize="17dp"/>
+
+        <LinearLayout
+            android:id="@+id/layout_toggle_social_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="60dp">
+            <TextView
+                android:id="@+id/social_filter_toggle"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:fontFamily="@font/semibold"
+                android:text="Enable Social Preferences"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:textAllCaps="true"
+                android:visibility="visible"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/social_filter_disabled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/social_filter_disabled_resize"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/social_filter_enabled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/social_filter_enabled_resize"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/religion_socialfilter_subheading"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:fontFamily="@font/semibold"
+            android:text="Religion"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textAllCaps="false"
+            android:visibility="visible"/>
+
+        <RelativeLayout
+            android:id="@+id/relative_religion_social_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/religionSocialFilterSpinner"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Select"
+                android:fontFamily="@font/mont_semibold"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:background="@android:color/transparent"
+                android:textAllCaps="false"
+                android:gravity="bottom"
+                android:drawableRight="@drawable/down_arrow_resize"
+                android:drawablePadding="2dp"
+                android:drawableBottom="@drawable/white_line"/>
+
+            <TextView
+                android:id="@+id/religion_socialfilter_number_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_alignBottom="@+id/religionSocialFilterSpinner"
+                android:layout_alignParentBottom="true"
+                android:text="0 Selected"
+                android:textSize="15dp"
+                android:paddingBottom="5dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/mont_regular"
+                android:textColor="@color/golden_yellow"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="70dp"/>
+
+        </RelativeLayout>
+
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupReligion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:visibility="visible" >
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <TextView
+            android:id="@+id/caste_socialfilter_subheading"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/semibold"
+            android:text="Caste"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:visibility="visible" />
+
+
+        <RelativeLayout
+            android:id="@+id/relative_caste_social_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/casteSocialFilterSpinner"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Select"
+                android:layout_alignBottom="@id/casteSocialFilterSpinner"
+                android:fontFamily="@font/mont_semibold"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:background="@android:color/transparent"
+                android:textAllCaps="false"
+                android:gravity="bottom"
+                android:drawablePadding="2dp"
+                android:drawableRight="@drawable/down_arrow_resize"
+                android:drawableBottom="@drawable/white_line"/>
+
+            <TextView
+                android:id="@+id/caste_socialfilter_number_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignBottom="@+id/casteSocialFilterSpinner"
+                android:text="0 Selected"
+                android:textSize="15dp"
+                android:paddingBottom="5dp"
+                android:fontFamily="@font/mont_regular"
+                android:textColor="@color/golden_yellow"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="70dp"/>
+
+        </RelativeLayout>
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupCaste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:visibility="visible" >
+        </com.google.android.material.chip.ChipGroup>
+
+
+
+        <TextView
+            android:id="@+id/age_socialfilter_subheading"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/semibold"
+            android:text="Age should be between(yrs)"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:visibility="visible" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/agefilterLinearLayout"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <Spinner
+                    android:id="@+id/ageMinSocialFilter"
+                    style="@android:style/Widget.Material.Light.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:paddingStart="75dp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:gravity="bottom"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@android:color/white"
+                    android:text="Min">
+
+                </TextView>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <Spinner
+                    android:id="@+id/ageMaxSocialFilter"
+                    style="@android:style/Widget.Material.Light.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="75dp"
+                    android:backgroundTint="@color/white"
+                    android:visibility="visible" />
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:text="Max">
+
+                </TextView>
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/height_socialfilter_subheading"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/semibold"
+            android:text="Height should be between(cms)"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/heightfilterLinearLayout"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <Spinner
+                    android:id="@+id/heightMinSocialFilter"
+                    style="@android:style/Widget.Material.Light.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:paddingStart="75dp"
+                    android:visibility="visible" />
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:text="Min">
+                </TextView>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <Spinner
+                    android:id="@+id/heightMaxSocialFilter"
+                    style="@android:style/Widget.Material.Light.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:paddingStart="75dp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@android:color/white"
+                    android:paddingStart="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:text="Max">
+                </TextView>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/profession_socialfilter_subheading"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:fontFamily="@font/semibold"
+            android:text="Profession"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textAllCaps="false"
+            android:visibility="visible" />
+
+
+        <RelativeLayout
+            android:id="@+id/relative_profession_social_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <Spinner
+                android:id="@+id/professionSocialFilterSpinner"
+                style="@android:style/Widget.Material.Light.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/profession_socialfilter_number_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+                android:text="0 Selected"
+                android:textSize="15dp"
+                android:fontFamily="@font/mont_regular"
+                android:textColor="@color/golden_yellow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="70dp"/>
+
+        </RelativeLayout>
+
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupProfession"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:visibility="visible" >
+        </com.google.android.material.chip.ChipGroup>
+
+
+        <Button
+            android:id="@+id/saveSocialPreferences"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/black"
+            android:background="@drawable/rounded_button"
+            android:text="SAVE &amp; CONTINUE"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+</ScrollView>

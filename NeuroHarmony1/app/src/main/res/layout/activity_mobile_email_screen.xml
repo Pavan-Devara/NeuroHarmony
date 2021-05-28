@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/bgprof"
+    tools:context=".ui.login.MobileEmailScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="215dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="115dp"
+            android:src="@drawable/logo"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/subtitle_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subtext"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/light"
+            android:layout_centerHorizontal="true"
+            android:textSize="15.5sp"
+            android:layout_below="@id/imageView"
+            android:layout_marginTop="0dp"
+            />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/subtitle_mobile"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="100dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:textSize="16dp"
+            android:padding="5dp"
+            android:fontFamily="@font/bold"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content"
+            android:text="MOBILE NUMBER" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/mobile_id_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mobile1"
+            android:maxLength="20"
+            android:backgroundTint="#C5B5D3"
+            android:hint="Enter your mobile number"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#C5B5D3"
+            android:inputType="phone"
+            android:paddingLeft="50dp" />
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/country_code_picker_sign_up"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            app:ccp_autoDetectCountry="false"
+            />
+
+        </FrameLayout>
+
+
+
+        <TextView
+            android:id="@+id/email2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:padding="5dp"
+            android:fontFamily="@font/bold"
+            android:text="E-MAIL ID"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/email_id_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/mobile1"
+            android:backgroundTint="#C5B5D3"
+            android:textColorHint="#C5B5D3"
+            android:hint="Enter your e-mail id"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/email_mobile_continue"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="REQUEST OTP"
+            android:textSize="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/bold"
+            android:textColor="#3C1A5B"
+            android:background="@drawable/rounded_button"
+            />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

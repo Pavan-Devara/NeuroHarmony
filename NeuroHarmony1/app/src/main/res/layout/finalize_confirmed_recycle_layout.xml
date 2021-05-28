@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/white_background_complete_match"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:id="@+id/pic_confirmed_finalize_match"
+        android:background="@mipmap/profile_pic_placeholder"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Serin"
+            android:id="@+id/user_name_finalize_confirmed"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/semibold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginLeft="5dp"
+            android:id="@+id/user_name_midle_confirmed"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/semibold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginLeft="5dp"
+            android:id="@+id/user_name_last_confirmed"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/semibold"/>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Details"
+        android:id="@+id/details_finalize_confirmed"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/regular"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:background="@drawable/rounded_button"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Match report"
+        android:fontFamily="@font/bold"
+        android:id="@+id/match_report_final"
+        android:textSize="15dp"
+        android:textColor="@color/background"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/view_partner_profile_complete_match"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Social Profile"
+        android:fontFamily="@font/bold"
+        android:textSize="15dp"
+        android:textColor="@color/background"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rounded_button" />
+
+
+</LinearLayout>

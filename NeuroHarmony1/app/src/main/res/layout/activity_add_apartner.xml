@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ui.login.manualMatching.AddAPartner"
+    android:background="@color/background">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/partner_mobile"
+            android:textColor="#FFFFFF"
+            android:id="@+id/text_view_add_partner_mobile"
+            android:textSize="30dp"
+            android:fontFamily="@font/bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/sub_mob_part"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/text_view_add_partner_mobile"
+            android:layout_marginTop="10dp"
+            android:id="@+id/text_view_subadd_partner_mobile"
+            android:textSize="17dp"
+            android:fontFamily="@font/medium"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:id="@+id/edit_mobile_add_partner"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:inputType="number"
+            android:maxLength="20"
+            android:layout_below="@id/text_view_subadd_partner_mobile"
+            android:hint="Enter Mobile Number"
+            android:layout_marginTop="170dp"
+            android:paddingLeft="60dp"
+            android:paddingStart="60dp"
+            android:background="@drawable/rounded_white_option_button"/>
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/country_code_picker_manual_match"
+            android:layout_below="@id/text_view_subadd_partner_mobile"
+            android:layout_width="55dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="170dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_white_option_button"
+            app:ccp_autoDetectCountry="false"
+            />
+        </FrameLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_subadd_partner_mobile"
+            android:layout_marginTop="100dp"
+            android:text="OK"
+            android:id="@+id/button_okay_add_partner"
+            android:fontFamily="@font/bold"
+            android:textColor="@color/background"
+            android:textSize="20dp"
+            android:background="@drawable/rounded_button"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

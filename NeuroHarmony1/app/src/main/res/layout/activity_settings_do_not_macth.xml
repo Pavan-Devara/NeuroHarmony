@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.CompleteMatch.SettingsDoNotMacthActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/settings"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/back_settings"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_arrow_24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/medium"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:id="@+id/settings_heading"
+            android:layout_centerHorizontal="true"
+            android:text="Settings"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/do_not_match"
+        android:fontFamily="@font/semibold"
+        android:text="DO NOT MATCH"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/settings"
+        android:layout_marginTop="90dp"
+
+        android:layout_marginRight="40dp">
+
+        <ImageView
+            android:id="@+id/toggle_off"
+            android:layout_width="wrap_content"
+            android:clickable="true"
+
+            android:layout_height="wrap_content"
+            android:src="@drawable/social_filter_disabled_resize"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/toggle_on"
+            android:layout_width="wrap_content"
+            android:clickable="true"
+            android:layout_height="wrap_content"
+            android:src="@drawable/social_filter_enabled_resize"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

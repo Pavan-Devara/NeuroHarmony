@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.CompleteMatch.SearchPartner"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relative_affiliate_trasnsactions"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/back_add_final_match"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_arrow_24dp"/>
+
+        <TextView
+            android:id="@+id/yerms_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/background"
+            android:fontFamily="@font/semibold"
+            android:text="Transactions"
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Add partner mobile number"
+            android:textColor="#FFFFFF"
+            android:id="@+id/text_view_add_partner_mobile"
+            android:textSize="20dp"
+            android:fontFamily="@font/bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/sub_mob_part"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/text_view_add_partner_mobile"
+            android:layout_marginTop="25dp"
+            android:id="@+id/text_view_subadd_partner_mobile"
+            android:textSize="17dp"
+            android:fontFamily="@font/medium"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:id="@+id/edit_mobile_finalize"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:padding="10dp"
+                android:inputType="number"
+                android:maxLength="20"
+                android:layout_below="@id/text_view_subadd_partner_mobile"
+                android:hint="Enter Mobile Number"
+                android:layout_marginTop="170dp"
+                android:paddingLeft="60dp"
+                android:paddingStart="60dp"
+                android:background="@drawable/rounded_white_option_button"/>
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/country_code_picker_search_match"
+                android:layout_below="@id/text_view_subadd_partner_mobile"
+                android:layout_width="55dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="170dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                app:ccp_autoDetectCountry="false"
+                android:background="@drawable/rounded_white_option_button"
+                />
+        </FrameLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_subadd_partner_mobile"
+            android:layout_marginTop="145dp"
+            android:text="OK"
+            android:id="@+id/button_okay_final_partner"
+            android:fontFamily="@font/bold"
+            android:textColor="@color/background"
+            android:textSize="20dp"
+            android:background="@drawable/rounded_button"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

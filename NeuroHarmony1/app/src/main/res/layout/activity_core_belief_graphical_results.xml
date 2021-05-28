@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F1ECF4"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.CoreBeliefGraphicalResults">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:id="@+id/heading">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/back_core_graph_menu"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back_arrow_24dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/medium"
+                    android:layout_marginTop="15dp"
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="Core Belief Report"
+                    android:textColor="@android:color/white"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/pic_view"
+            android:layout_width="95dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/heading"
+            android:layout_height="95dp"
+            android:background="@mipmap/profile_pic_placeholder">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/username_core_belief_graphical_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/pic_view"
+            android:textSize="20dp"
+            android:fontFamily="@font/medium">
+        </TextView>
+        <View
+            android:layout_width="match_parent"
+            android:id= "@+id/line_view"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/pic_view"
+            android:layout_marginTop="60dp"
+            android:background="#C5B5D3"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Idealist"
+            android:textColor="#000"
+            android:id="@+id/idealistic"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/line_view"
+            android:textSize="20dp"
+            android:fontFamily="@font/medium">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/idealistic"
+            android:layout_height="match_parent">
+
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left_core_belief_graph_icon"
+
+                />
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pause_core_belief_graph_icon"
+                />
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right_core_belief_graph_icon"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:id="@+id/linear_self_core_i"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/idealistic">
+            <Button
+                android:id="@+id/idealisticCreativity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Creativity "
+                android:background="@drawable/core_belief_drawable_button_background"
+                android:gravity="center"
+                android:layout_gravity="center"
+
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:fontFamily="@font/medium"
+
+                />
+
+            <Button
+                android:id="@+id/idealisticPerfectionist"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/core_belief_drawable_button_background"
+                android:layout_height="wrap_content"
+                android:text="Perfectionist"
+                android:layout_gravity="center"
+                android:layout_marginRight="2dp"
+                android:textAllCaps="false"
+
+                android:fontFamily="@font/medium"
+                android:layout_below="@+id/idealistic"
+
+                 />
+            <Button
+                android:id="@+id/idealisticVisionary"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Visionary"
+                android:background="@drawable/core_belief_drawable_button_background"
+                android:textAllCaps="false"
+                android:fontFamily="@font/medium"
+                android:layout_below="@+id/idealistic"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Powerite"
+            android:textColor="#000"
+            android:id="@+id/Powerite"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/linear_self_core_i"
+            android:textSize="20dp"
+            android:fontFamily="@font/medium">
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/Powerite"
+            android:layout_height="match_parent">
+
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left_core_belief_graph_icon"
+
+                />
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pause_core_belief_graph_icon"
+                />
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right_core_belief_graph_icon"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/linear_self_core_p"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/Powerite">
+            <Button
+                android:id="@+id/PoweriteAnalyst"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:text="Analyst"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/medium"
+                android:background="@drawable/core_belief_drawable_button_background" />
+            <Button
+                android:id="@+id/PoweriteHelper"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+               android:layout_marginRight="2dp"
+                android:layout_height="wrap_content"
+                android:text="Helper"
+                android:textAllCaps="false"
+                android:fontFamily="@font/medium"
+                android:layout_below="@+id/idealistic"
+                android:background="@drawable/core_belief_drawable_button_background"
+                />
+            <Button
+                android:id="@+id/PoweriteBoss"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+
+                android:layout_height="wrap_content"
+                android:text="Boss"
+                android:textAllCaps="false"
+                android:fontFamily="@font/medium"
+                android:background="@drawable/core_belief_drawable_button_background"
+                android:layout_below="@+id/idealistic"
+                 />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Groupies"
+            android:textColor="#000"
+            android:id="@+id/Grouple"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/linear_self_core_p"
+            android:textSize="20dp"
+            android:fontFamily="@font/medium">
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/Grouple"
+            android:layout_height="match_parent">
+
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left_core_belief_graph_icon"
+
+                />
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pause_core_belief_graph_icon"
+                />
+            <ImageView
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right_core_belief_graph_icon"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:id="@+id/linear_3_core_self"
+            android:orientation="horizontal"
+            android:layout_below="@+id/Grouple">
+            <Button
+                android:id="@+id/GroupiePeacemaker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="PeaceMaker"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:fontFamily="@font/medium"
+                android:background="@drawable/core_belief_drawable_button_background" />
+            <Button
+                android:id="@+id/GroupieLoyalSkeptie"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="Loyal Skeptie"
+                android:textAllCaps="false"
+                android:fontFamily="@font/medium"
+                android:layout_below="@+id/idealistic"
+                android:background="@drawable/core_belief_drawable_button_background"
+                />
+            <Button
+                android:id="@+id/GroupieAchiever"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Achiever"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:fontFamily="@font/medium"
+                android:background="@drawable/core_belief_drawable_button_background"
+                android:layout_below="@+id/idealistic"
+               />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_height="55dp"
+            android:text="VIEW REPORT"
+            android:fontFamily="@font/bold"
+            android:layout_below="@id/linear_3_core_self"
+            android:textColor="@color/background"
+            android:background="@drawable/rounded_button"
+            android:id="@+id/core_belief_report"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp">
+        </Button>
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".ui.login.NeuroMatchedUsers">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/back_groups"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_arrow_24dp"/>
+        <TextView
+            android:id="@+id/heading_groups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/medium"
+            android:layout_marginTop="15dp"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"
+            android:text="Groups"
+            android:textColor="@android:color/white"/>
+
+        <ImageButton
+            android:id="@+id/update_social_preferences"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/social_filter_groups_icon"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/female_image_radio"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabs"
+        android:elevation="4dp"
+        android:layout_marginTop="10dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="#937CB0"
+        app:tabRippleColor="@color/white"
+        app:tabIndicatorColor="@color/golden_yellow"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:background="@color/background" />
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

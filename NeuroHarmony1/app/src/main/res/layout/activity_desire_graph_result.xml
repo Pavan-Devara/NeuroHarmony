@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C5B5D3"
+    tools:context=".ui.login.DesireGraphResult">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:id="@+id/heading">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/back_desire_graph_menu"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back_arrow_24dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/medium"
+                    android:layout_marginTop="15dp"
+                    android:textSize="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="Desire Report"
+                    android:textColor="@android:color/white"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="#FFFFFF"
+            android:layout_below="@id/heading"
+            android:layout_marginTop="0dp"
+            android:id="@+id/heading2">
+
+            <ImageView
+                android:id="@+id/imageViewNeuroGraph"
+                android:layout_width="120dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_height="120dp"
+                android:background="@mipmap/profile_pic_placeholder">
+
+            </ImageView>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/imageViewNeuroGraph"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/username_desire_graphical_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:layout_marginBottom="5dp"
+                android:layout_centerVertical="true"
+                android:text="You"
+                android:textColor="#000"
+                android:textSize="20dp">
+
+
+            </TextView>
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/neuro_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/neuro_icon">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Neuro"
+                android:id="@+id/neuro_text"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:fontFamily="@font/regular">
+
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/desire_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/desire_icon">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desire"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:fontFamily="@font/regular">
+
+
+            </TextView>
+            </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:layout_below="@id/heading2"
+            android:layout_marginTop="10dp"
+            android:id="@+id/heading3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spontaneous"
+                android:textColor="#000"
+                android:layout_toLeftOf="@+id/liner_1"
+                android:layout_centerVertical="true"
+                android:textSize="15dp"
+                android:fontFamily="@font/regular">
+
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visionary"
+                android:textColor="#000"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/liner_1"
+                android:textSize="15dp"
+                android:fontFamily="@font/regular">
+
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_height="30dp"
+                android:background="@drawable/graph_size">
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/plot_c12_neuro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="77dp"
+                    android:layout_weight="1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:visibility="invisible"
+                    android:background="@drawable/ploting_icon_self" />
+
+                <ImageView
+                    android:id="@+id/plot_c11_neuro"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="invisible"
+                    android:background="@drawable/ploting_icon_self"/>
+
+                <ImageView
+                    android:id="@+id/plot_c21_neuro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:background="@drawable/ploting_icon_self" />
+
+                <ImageView
+                    android:id="@+id/plot_c22_neuro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="25dp"
+                    android:visibility="invisible"
+                    android:background="@drawable/ploting_icon_self" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/liner_1"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/plot_c12_desire"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="25dp"
+                android:layout_height="60dp"
+                android:visibility="invisible"
+                android:layout_weight="1"
+                android:background="@drawable/plotting_icon_desire"/>
+
+                <ImageView
+                    android:id="@+id/plot_c11_desire"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="60dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:background="@drawable/plotting_icon_desire"/>
+                <ImageView
+                    android:id="@+id/plot_c21_desire"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="60dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:background="@drawable/plotting_icon_desire"/>
+                <ImageView
+                    android:id="@+id/plot_c22_desire"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="25dp"
+                    android:visibility="invisible"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/plotting_icon_desire"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Worldview"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:fontFamily="@font/medium">
+
+            </TextView>
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:layout_below="@id/heading3"
+            android:layout_marginTop="10dp"
+            android:id="@+id/heading4">
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_height="30dp"
+                android:background="@drawable/graph_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Functional Approach"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:fontFamily="@font/medium">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logic"
+                android:textColor="#000"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/liner_2"
+                android:textSize="15dp"
+                android:fontFamily="@font/regular">
+
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Values"
+                android:textColor="#000"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/liner_2"
+                android:textSize="15dp"
+                android:fontFamily="@font/regular">
+
+
+            </TextView>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/plot_p12_neuro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:background="@drawable/ploting_icon_self" />
+
+                <ImageView
+                    android:id="@+id/plot_p11_neuro"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:layout_height="77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="invisible"
+                    android:background="@drawable/ploting_icon_self"/>
+
+                <ImageView
+                    android:id="@+id/plot_p21_neuro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:background="@drawable/ploting_icon_self" />
+
+                <ImageView
+                    android:id="@+id/plot_p22_neuro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:background="@drawable/ploting_icon_self" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/liner_2"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/plot_p12_desire"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_height="60dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:background="@drawable/plotting_icon_desire"/>
+
+                <ImageView
+                    android:id="@+id/plot_p11_desire"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:background="@drawable/plotting_icon_desire"/>
+                <ImageView
+                    android:id="@+id/plot_p21_desire"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:background="@drawable/plotting_icon_desire"/>
+                <ImageView
+                    android:id="@+id/plot_p22_desire"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="25dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:layout_height="60dp"
+                    android:background="@drawable/plotting_icon_desire"/>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heading4"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:id="@+id/heading5">
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_height="30dp"
+                android:background="@drawable/graph_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Perception"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:fontFamily="@font/medium">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data"
+                android:textColor="#000"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/liner_3"
+                android:textSize="15dp"
+                android:fontFamily="@font/regular">
+
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Connection"
+                android:textColor="#000"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/liner_3"
+                android:textSize="15dp"
+                android:fontFamily="@font/regular">
+
+
+            </TextView>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/plot_i12_neuro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:background="@drawable/ploting_icon_self" />
+
+                <ImageView
+                    android:id="@+id/plot_i11_neuro"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:background="@drawable/ploting_icon_self"/>
+
+                <ImageView
+                    android:id="@+id/plot_i21_neuro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:background="@drawable/ploting_icon_self" />
+
+                <ImageView
+                    android:id="@+id/plot_i22_neuro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="25dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:background="@drawable/ploting_icon_self" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/liner_3"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/plot_i12_desire"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:background="@drawable/plotting_icon_desire"/>
+
+                <ImageView
+                    android:id="@+id/plot_i11_desire"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:background="@drawable/plotting_icon_desire"/>
+                <ImageView
+                    android:id="@+id/plot_i21_desire"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="60dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:background="@drawable/plotting_icon_desire"/>
+                <ImageView
+                    android:id="@+id/plot_i22_desire"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="25dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:layout_height="60dp"
+                    android:background="@drawable/plotting_icon_desire"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="55dp"
+            android:text="VIEW REPORT"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/bold"
+            android:textColor="@color/background"
+            android:background="@drawable/rounded_button"
+            android:layout_below="@id/heading5"
+            android:id="@+id/desire_neuro_report"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+</ScrollView>

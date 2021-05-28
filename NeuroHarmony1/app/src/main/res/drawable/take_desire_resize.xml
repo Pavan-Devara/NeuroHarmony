@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/take_desire_new"
+        android:width="95sp"
+        android:height="100sp"
+        />
+
+</layer-list>

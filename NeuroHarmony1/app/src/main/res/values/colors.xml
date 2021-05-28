@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#438500</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="yellow">#FFF748</color>
+    <color name="background">#3C1A5B</color>
+    <color name="white">@android:color/white</color>
+    <color name="golden_yellow">#f2c013</color>
+    <color name="shaded_background">#D04C2D68</color>
+    <color name= "light_background">#491B5C</color>
+    <color name="light_pink">#F1ECF4</color>
+    <color name="light_green">#FF34DD0F</color>
+    <color name="partner_profile_font_color">#434343</color>
+    <color name="tab_font_color">#937CB0</color>
+
+    <color name="light_dark">#555555</color>
+
+
+
+    <!--    library for custom search and select-->
+    <color name="black">#000000</color>
+
+</resources>

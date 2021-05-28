@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ui.login.ViewPartnerProfile.ViewPartnerProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/relative_partner_profile"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/back_partner_profile"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_arrow_24dp"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:id="@+id/view_purple"
+                android:background="@color/background"
+                android:layout_height="75dp"/>
+
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/partner_profile_image"
+                android:background="@mipmap/profile_pic_placeholder"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:id="@+id/partner_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/partner_profile_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/mont_bold"
+                android:text="Ajai Ghosh"
+                android:textColor="@android:color/black"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/partner_profile_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/partner_profile_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/mont_regular"
+                android:text="24 | Single | Female"
+                android:textColor="@android:color/black" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabsViewPartnerProfile"
+        android:elevation="4dp"
+        android:layout_marginTop="10dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/background"
+        app:tabTextColor="@color/tab_font_color"
+        app:tabRippleColor="@color/white"
+        app:tabIndicatorColor="@color/golden_yellow" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPagerViewPartnerProfile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+    </RelativeLayout>
+
+</LinearLayout>

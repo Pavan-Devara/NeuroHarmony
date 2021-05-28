@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".ui.login.PurchaseTokensDashboard.NeuroTokenTransactions"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_transactions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/token_calculations_layout"
+        android:layout_alignParentTop="true"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_light_background_button"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/total_tokens_available"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/medium"
+                android:padding="2dp"
+                android:text="Total Number of Tokens"
+                android:textColor="@android:color/white"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/total_tokens_available_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/total_tokens_available"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/mobile1"
+                android:gravity="end"
+                android:padding="2dp"
+                android:text="22"
+                android:textColor="@android:color/white"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/referral_bonus_tokens"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/total_tokens_available"
+                android:fontFamily="@font/medium"
+                android:padding="2dp"
+                android:text="Referral Bonus"
+                android:textColor="@android:color/white"
+                android:textSize="17dp" />
+
+
+            <TextView
+                android:id="@+id/referral_bonus_tokens_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/referral_bonus_tokens"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/mobile1"
+                android:gravity="end"
+                android:padding="2dp"
+                android:text="22"
+                android:textColor="@android:color/white"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/used_tokens"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/referral_bonus_tokens"
+                android:fontFamily="@font/medium"
+                android:padding="2dp"
+                android:text="Used Tokens"
+                android:textColor="@android:color/white"
+                android:textSize="17dp" />
+
+
+            <TextView
+                android:id="@+id/used_tokens_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/used_tokens"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/mobile1"
+                android:gravity="end"
+                android:padding="2dp"
+                android:text="22"
+                android:textColor="@android:color/white"
+                android:textSize="17dp" />
+
+
+            <View
+                android:id="@+id/white_line_tokens"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/used_tokens"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/balance_tokens"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/white_line_tokens"
+                android:fontFamily="@font/medium"
+                android:padding="2dp"
+                android:text="Balance Tokens"
+                android:textColor="@android:color/white"
+                android:textSize="17dp" />
+
+
+            <TextView
+                android:id="@+id/balance_tokens_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/balance_tokens"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/mobile1"
+                android:gravity="end"
+                android:padding="2dp"
+                android:text="22"
+                android:textColor="@android:color/white"
+                android:textSize="17dp" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/transaction_detail_titles_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:fontFamily="@font/medium"
+                android:gravity="left"
+                android:text="Date"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:fontFamily="@font/medium"
+                android:gravity="left"
+                android:text="Remarks"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:fontFamily="@font/medium"
+                android:gravity="center"
+                android:text="Credit"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.15"
+                android:fontFamily="@font/medium"
+                android:gravity="end"
+                android:text="Debit"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/transaction_detail_titles_layout_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/transaction_detail_titles_layout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white" />
+
+
+        <!-- TODO: Update blank fragment layout -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/token_transaction_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/background" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/token_calculations_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view_token_calculation_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:fontFamily="@font/medium"
+            android:text="Total"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/credit_tokens_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:fontFamily="@font/mobile1"
+            android:gravity="center"
+            android:text="30"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/debit_tokens_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:fontFamily="@font/mobile1"
+            android:gravity="end"
+            android:text="7"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_token_calculation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/balance_tokens_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white" />
+
+
+    <RelativeLayout
+        android:id="@+id/balance_tokens_layout"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/transfer_token_continue"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/balance_tokens_calculation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/medium"
+            android:padding="2dp"
+            android:text="Balance Tokens"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/balance_tokens_calculation_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/balance_tokens_calculation"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/mobile1"
+            android:gravity="end"
+            android:text="22"
+            android:textColor="@android:color/white"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/balance_tokens_layout_view"
+        android:layout_alignBottom="@id/balance_tokens_layout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white" />
+
+
+    <Button
+        android:id="@+id/transfer_token_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/bold"
+        android:text="Transfer Token"
+        android:textColor="@color/background"
+        android:textSize="16dp" />
+
+</RelativeLayout>

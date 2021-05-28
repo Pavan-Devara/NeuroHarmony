@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.login.AfilliateWorkFlow.BankDetailsAffiliate">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/bankdetails"
+        android:orientation="vertical">
+
+
+
+
+        <TextView
+            android:id="@+id/heading_bankdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/semibold"
+            android:text="Bank Details"
+            android:layout_weight="1"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/marquee1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:gravity="center"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:text="Detail registration failed. Please contact admin 8919779056"
+            android:textColor="#FF3333"
+            android:textSize="15dp" />
+
+
+
+
+        <TextView
+            android:id="@+id/bankname"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:paddingLeft="5dp"
+            android:fontFamily="@font/bold"
+            android:text="Bank Name"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:textAllCaps="true"
+            android:visibility="visible"
+            />
+
+        <EditText
+            android:id="@+id/bankname_edittext"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:inputType="text"
+            android:fontFamily="@font/regular"
+            android:hint="Enter your bank name"
+            android:textColorHint="#C5B5D3"
+            android:backgroundTint="#AFAFAF"
+            android:visibility="visible"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/account_type_heading"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/bold"
+            android:text="Bank account type"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:visibility="visible"
+            />
+
+        <Spinner
+            android:id="@+id/account_type_spinner"
+            style="@android:style/Widget.Material.Light.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:backgroundTint="#AFAFAF"
+            android:visibility="visible"
+            />
+
+        <TextView
+            android:id="@+id/account_number_textview"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:paddingLeft="5dp"
+            android:fontFamily="@font/bold"
+            android:text="Bank account number"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:textAllCaps="true"
+            android:visibility="visible"
+            />
+
+        <EditText
+            android:id="@+id/account_number_edittext"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:fontFamily="@font/regular"
+            android:maxLines="1"
+            android:inputType="number"
+            android:hint="Enter your bank account number"
+            android:textColorHint="#C5B5D3"
+            android:backgroundTint="#AFAFAF"
+            android:visibility="visible"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/account_number_textview_confirm"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:paddingLeft="5dp"
+            android:fontFamily="@font/bold"
+            android:text="Confirm bank account number"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:textAllCaps="true"
+            android:visibility="visible"
+            />
+
+        <EditText
+            android:id="@+id/account_number_edittext_confirm"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:fontFamily="@font/regular"
+            android:maxLines="1"
+            android:inputType="number"
+            android:hint="Confirm your bank account number"
+            android:textColorHint="#C5B5D3"
+            android:backgroundTint="#AFAFAF"
+            android:visibility="visible"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/ifsc_text_view"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:paddingLeft="5dp"
+            android:fontFamily="@font/bold"
+            android:text="Bank Ifsc code"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:textAllCaps="true"
+            android:visibility="visible"
+            />
+
+        <EditText
+            android:id="@+id/ifsc_edittext"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:inputType="text"
+            android:fontFamily="@font/regular"
+            android:hint="Enter your bank IFSC code"
+            android:textColorHint="#C5B5D3"
+            android:backgroundTint="#AFAFAF"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/pan_text_view"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:paddingLeft="5dp"
+            android:fontFamily="@font/bold"
+            android:text="PAN Number"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="13dp"
+            android:textAllCaps="true"
+            android:visibility="visible"
+            />
+
+        <EditText
+            android:id="@+id/pan_edittext"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:inputType="text"
+            android:fontFamily="@font/regular"
+            android:hint="Enter your pan number"
+            android:textColorHint="#C5B5D3"
+            android:backgroundTint="#AFAFAF"
+            android:textColor="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/org_linear"
+            android:visibility="gone"
+            android:background="@color/background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Organization Details"
+                android:textColor="@color/white"
+                android:fontFamily="@font/semibold"
+                android:textSize="17dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/ORGANIZATION_name"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:paddingLeft="5dp"
+                android:fontFamily="@font/bold"
+                android:text="ORGANIZATION Name"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:textAllCaps="true"
+                android:visibility="visible"
+                />
+
+            <EditText
+                android:id="@+id/ORGANIZATION_name_edittext"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:inputType="text"
+                android:fontFamily="@font/regular"
+                android:hint="Enter your organization name"
+                android:textColorHint="#C5B5D3"
+                android:backgroundTint="#AFAFAF"
+                android:visibility="visible"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:id="@+id/country_text"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:paddingLeft="5dp"
+                android:fontFamily="@font/bold"
+                android:text="ORGANIZATION Country"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:textAllCaps="true"
+                android:visibility="visible"
+                />
+
+
+            <Button
+                android:id="@+id/orgcountry_edittext"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:text="Select"
+                android:fontFamily="@font/mont_light"
+                android:drawablePadding="5dp"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:background="@color/background"
+                android:textAllCaps="false"
+                android:gravity="bottom"
+                android:drawableRight="@drawable/down_arrow_resize"
+                android:drawableBottom="@drawable/white_line"/>
+
+            <TextView
+                android:id="@+id/ORGANIZATION_state"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:paddingLeft="5dp"
+                android:fontFamily="@font/bold"
+                android:text="ORGANIZATION STATE"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:textAllCaps="true"
+                android:visibility="visible"
+                />
+
+            <Button
+                android:id="@+id/ORGANIZATION_state_edittext"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/mont_light"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:text="Select"
+                android:drawablePadding="5dp"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:background="@color/background"
+                android:textAllCaps="false"
+                android:gravity="bottom"
+                android:drawableRight="@drawable/down_arrow_resize"
+                android:drawableBottom="@drawable/white_line"/>
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:paddingLeft="5dp"
+                android:fontFamily="@font/bold"
+                android:text="ORGANIZATION CITY"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:textAllCaps="true"
+                android:visibility="visible"
+                />
+
+            <Button
+                android:id="@+id/orgcity_edittext"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/mont_light"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:text="Select"
+                android:drawablePadding="5dp"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:background="@color/background"
+                android:textAllCaps="false"
+                android:gravity="bottom"
+                android:drawableRight="@drawable/down_arrow_resize"
+                android:drawableBottom="@drawable/white_line"/>
+            <TextView
+                android:id="@+id/tan"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:paddingLeft="5dp"
+                android:fontFamily="@font/bold"
+                android:text="ORGANIZATION TAN NUMBER"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:textAllCaps="true"
+                android:visibility="visible"
+                />
+
+            <EditText
+                android:id="@+id/tan_edittext"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:inputType="text"
+                android:fontFamily="@font/regular"
+                android:hint="Enter your organization tan number"
+                android:textColorHint="#C5B5D3"
+                android:backgroundTint="#AFAFAF"
+                android:visibility="visible"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:id="@+id/gst"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:paddingLeft="5dp"
+                android:fontFamily="@font/bold"
+                android:text="GSTIN Number"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:textAllCaps="true"
+                android:visibility="visible"
+                />
+
+            <EditText
+                android:id="@+id/gst_edittext"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:inputType="number"
+                android:fontFamily="@font/regular"
+                android:hint="Enter your organization gst number"
+                android:textColorHint="#C5B5D3"
+                android:backgroundTint="#AFAFAF"
+                android:visibility="visible"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/continue_bank_details"
+            android:background="@drawable/rounded_button"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="CONTinue"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/background"
+            android:fontFamily="@font/bold"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
+
+

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_white_option_button"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/image_of_confirm"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/square_logo_girl"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Serin"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:id="@+id/name_of_user_confirmed"
+            android:fontFamily="@font/semibold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/image_of_confirm"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24 June 2020 | 10 AM"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/name_of_user_confirmed"
+            android:fontFamily="@font/regular"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/details_confirmed_users"
+            android:layout_toRightOf="@+id/image_of_confirm"/>
+
+        <Button
+            android:id="@+id/view_manual_match_confirmed_user"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="VIEW MATCH"
+            android:fontFamily="@font/semibold"
+            android:textSize="13dp"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/background"
+            android:background="@drawable/light_yellow_background"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/image_of_confirm"
+            android:layout_below="@id/details_confirmed_users"/>
+
+        <Button
+            android:id="@+id/view_manual_match_confirmed_delink_user"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="DELINK"
+            android:fontFamily="@font/semibold"
+            android:textSize="13dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/background"
+            android:background="@drawable/light_pink_button"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/view_manual_match_confirmed_user"
+            android:layout_below="@id/details_confirmed_users"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

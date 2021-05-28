@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#C5B5D3"
+    tools:context=".ui.login.ViewPartnerProfile.ViewPartnerProfileDesireFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:id="@+id/headingPartnerProfileDesireFragment">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spontaneous"
+                android:textColor="#000"
+                android:layout_toLeftOf="@+id/linear1PartnerProfileDesireFragment"
+                android:layout_centerVertical="true"
+                android:textSize="15dp"
+                android:fontFamily="@font/regular">
+
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visionary"
+                android:textColor="#000"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/linear1PartnerProfileDesireFragment"
+                android:textSize="15dp"
+                android:fontFamily="@font/regular">
+
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_height="30dp"
+                android:background="@drawable/graph_size">
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/plot_c12_neuroPartnerProfileDesireFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="77dp"
+                    android:layout_weight="1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:visibility="invisible"
+                    android:background="@drawable/ploting_icon_self" />
+
+                <ImageView
+                    android:id="@+id/plot_c11_neuroPartnerProfileDesireFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="invisible"
+                    android:background="@drawable/ploting_icon_self"/>
+
+                <ImageView
+                    android:id="@+id/plot_c21_neuroPartnerProfileDesireFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:background="@drawable/ploting_icon_self" />
+
+                <ImageView
+                    android:id="@+id/plot_c22_neuroPartnerProfileDesireFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="25dp"
+                    android:visibility="invisible"
+                    android:background="@drawable/ploting_icon_self" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linear1PartnerProfileDesireFragment"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/plot_c12_desirePartnerProfileDesireFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_height="60dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:background="@drawable/plotting_icon_desire"/>
+
+                <ImageView
+                    android:id="@+id/plot_c11_desirePartnerProfileDesireFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="60dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:background="@drawable/plotting_icon_desire"/>
+                <ImageView
+                    android:id="@+id/plot_c21_desirePartnerProfileDesireFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="60dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:background="@drawable/plotting_icon_desire"/>
+                <ImageView
+                    android:id="@+id/plot_c22_desirePartnerProfileDesireFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="25dp"
+                    android:visibility="invisible"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/plotting_icon_desire"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Worldview"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:fontFamily="@font/medium">
+
+            </TextView>
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:layout_below="@id/headingPartnerProfileDesireFragment"
+            android:layout_marginTop="10dp"
+            android:id="@+id/heading1PartnerProfileDesireFragment">
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_height="30dp"
+                android:background="@drawable/graph_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Functional Approach"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:fontFamily="@font/medium">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logic"
+                android:textColor="#000"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/linear2PartnerProfileDesireFragment"
+                android:textSize="15dp"
+                android:fontFamily="@font/regular">
+
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Values"
+                android:textColor="#000"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/linear2PartnerProfileDesireFragment"
+                android:textSize="15dp"
+                android:fontFamily="@font/regular">
+
+
+            </TextView>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/plot_p12_neuroPartnerProfileDesireFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:background="@drawable/ploting_icon_self" />
+
+                <ImageView
+                    android:id="@+id/plot_p11_neuroPartnerProfileDesireFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:layout_height="77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="invisible"
+                    android:background="@drawable/ploting_icon_self"/>
+
+                <ImageView
+                    android:id="@+id/plot_p21_neuroPartnerProfileDesireFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:background="@drawable/ploting_icon_self" />
+
+                <ImageView
+                    android:id="@+id/plot_p22_neuroPartnerProfileDesireFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:background="@drawable/ploting_icon_self" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linear2PartnerProfileDesireFragment"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/plot_p12_desirePartnerProfileDesireFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_height="60dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:background="@drawable/plotting_icon_desire"/>
+
+                <ImageView
+                    android:id="@+id/plot_p11_desirePartnerProfileDesireFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:background="@drawable/plotting_icon_desire"/>
+                <ImageView
+                    android:id="@+id/plot_p21_desirePartnerProfileDesireFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:background="@drawable/plotting_icon_desire"/>
+                <ImageView
+                    android:id="@+id/plot_p22_desirePartnerProfileDesireFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="25dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:layout_height="60dp"
+                    android:background="@drawable/plotting_icon_desire"/>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/heading1PartnerProfileDesireFragment"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:id="@+id/heading2PartnerProfileDesireFragment">
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_height="30dp"
+                android:background="@drawable/graph_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Perception"
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:fontFamily="@font/medium">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data"
+                android:textColor="#000"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/linear3PartnerProfileDesireFragment"
+                android:textSize="15dp"
+                android:fontFamily="@font/regular">
+
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Connection"
+                android:textColor="#000"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/linear3PartnerProfileDesireFragment"
+                android:textSize="15dp"
+                android:fontFamily="@font/regular">
+
+
+            </TextView>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/plot_i12_neuroPartnerProfileDesireFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:background="@drawable/ploting_icon_self" />
+
+                <ImageView
+                    android:id="@+id/plot_i11_neuroPartnerProfileDesireFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:background="@drawable/ploting_icon_self"/>
+
+                <ImageView
+                    android:id="@+id/plot_i21_neuroPartnerProfileDesireFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:background="@drawable/ploting_icon_self" />
+
+                <ImageView
+                    android:id="@+id/plot_i22_neuroPartnerProfileDesireFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="77dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="25dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:background="@drawable/ploting_icon_self" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linear3PartnerProfileDesireFragment"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/plot_i12_desirePartnerProfileDesireFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:background="@drawable/plotting_icon_desire"/>
+
+                <ImageView
+                    android:id="@+id/plot_i11_desirePartnerProfileDesireFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:background="@drawable/plotting_icon_desire"/>
+                <ImageView
+                    android:id="@+id/plot_i21_desirePartnerProfileDesireFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="60dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:background="@drawable/plotting_icon_desire"/>
+                <ImageView
+                    android:id="@+id/plot_i22_desirePartnerProfileDesireFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="25dp"
+                    android:visibility="invisible"
+                    android:layout_weight="1"
+                    android:layout_height="60dp"
+                    android:background="@drawable/plotting_icon_desire"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

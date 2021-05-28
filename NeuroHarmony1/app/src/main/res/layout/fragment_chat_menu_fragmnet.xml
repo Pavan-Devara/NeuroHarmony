@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.login.ChatMenuFragmnet">
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#937CB0" />
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_menu_recycler_view"
+        android:layout_marginTop="40dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Nothing to show here!"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/nothinghere"
+        android:textColor="#434343"
+        />
+
+</FrameLayout>

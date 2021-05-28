@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.login.CompleteMatch.CompleteMatchActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/back_complete_match_menu"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_arrow_24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/medium"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="Finalize"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/complete_match_tabs"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="#C5B5D3"
+        android:elevation="4dp"
+        android:layout_marginTop="10dp"
+        app:tabMode="fixed"
+        app:tabRippleColor="@color/white"
+        app:tabIndicatorColor="@color/golden_yellow" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:id="@+id/Complete_match_viewPager"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

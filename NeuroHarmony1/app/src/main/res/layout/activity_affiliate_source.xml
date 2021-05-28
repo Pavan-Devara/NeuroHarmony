@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ui.login.AfilliateWorkFlow.AffiliateSource">
+
+    <TextView
+        android:id="@+id/source_heading"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/bold"
+        android:text="Source"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="13dp"
+        android:visibility="visible"
+        />
+
+    <Spinner
+        android:id="@+id/source_spinner"
+        style="@android:style/Widget.Material.Light.Spinner.Underlined"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:entries="@array/individual"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:backgroundTint="#AFAFAF"
+        android:visibility="visible"
+        />
+
+</LinearLayout>

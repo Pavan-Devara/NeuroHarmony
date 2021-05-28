@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".ui.login.PurchaseTokensDashboard.TokenPurchaseTransactions">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/back_transactions"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_arrow_24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/medium"
+            android:layout_marginTop="15dp"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"
+            android:text="Transaction"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:id="@+id/relative_availabletokens"
+        android:paddingTop="10dp"
+        android:background="@drawable/rounded_light_background_button"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/available_tokens_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/medium"
+            android:textSize="17dp"
+            android:layout_centerHorizontal="true"
+            android:text="Available Tokens"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/available_tokens_number"
+            android:layout_below="@+id/available_tokens_text"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mobile1"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textColor="@color/yellow"/>
+    </RelativeLayout>
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/transactions_tabs"
+        android:minHeight="?attr/actionBarSize"
+        android:elevation="4dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="#C5B5D3"
+        app:tabRippleColor="@color/white"
+        app:tabIndicatorColor="@color/golden_yellow" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:id="@+id/transactions_viewPager"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

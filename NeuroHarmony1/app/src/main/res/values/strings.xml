@@ -1,0 +1,160 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">Neuro Harmony</string>
+    <string name="neuro_test">Neuro Test</string>
+    <string name="subtext">Welcome to the most trusted \n  "      " matchmaking service</string>
+    <string name="question_core">Question  "      " of 8</string>
+    <string name="entermobile">Enter Mobile Number</string>
+    <string name="otpdescription">Enter the OTP sent to your mobile number</string>
+    <string name="policies">Please confirm your acceptance of our policies</string>
+    <string name="login_welcome_text">Welcome to the mosted trusted matchmaking service</string>
+    <string name="user_sign_in">USERNAME</string>
+    <string name="add_partner">Add "  "\nA Partner</string>
+    <string name="finalize_match">Finalize "  "\nMy Match</string>
+    <string name="my_finalize">My Finalize "  "\nMatch Requests</string>
+    <string name="finalize">Finalize""\nMatch</string>
+    <string name="partner_list">" "Partner \n List</string>
+    <string name="sub_mob_part">Please enter your partner"'"s \n "          "mobile number</string>
+    <string name="partner_mobile">"    "Add partner \n    Mobile Number</string>
+    <string name="mob_login">MOBILE NUMBER</string>
+    <string name="inp_user_sign_in">Enter your mobile number</string>
+    <string name="inp_pwd_sign_in">Enter password</string>
+    <string name="password_sign_in">PASSWORD</string>
+    <string name="new_pass">NEW PASSWORD</string>
+    <string name="neuro_tokens">10 neuro tokens successfully added \n "                "to your account</string>
+    <string name="button_sign_in">SIGN IN</string>
+    <string name="view_neuro_profile">View"              " \n Neuro Profile</string>
+    <string name="take_neuro_test">Take"          " \n Neuro Test</string>
+    <string name="view_neuro_test">View"          " \n Neuro Tests</string>
+    <string name="view_core_profile">View"          " \n Core Belief</string>
+    <string name="take_core_test">Take"                   " \n Core Belief Test</string>
+    <string name="view_core_test">View"                   " \n Core Belief Tests</string>
+    <string name="take_desire_test">Take"          " \n Desire Test</string>
+    <string name="vieww_desire_test">View"          " \n Desire Tests</string>
+    <string name="view_desire_test">View"              " \n Desire Profile</string>
+    <string name="social_preference">Partner "                  " \nSocial Preference</string>
+    <string name="forgot_pwd">Forgot Password?</string>
+    <string name="new_usr">Register here!</string>
+    <string name="select_user_type">Select User Type</string>
+    <string name="submit">SUBMIT</string>
+    <string name="my_chatt">My \nChat</string>
+    <string name="additional">Additional information here</string>
+    <string name="buy_tokens">Buy\n""Tokens</string>
+    <string name="neuro_profile">Neuro \nProfile</string>
+    <string name="partner_preference">Partner \n""Preference</string>
+    <string name="core_belief">Core \nBelief</string>
+    <string name="social_profile">Social \n""Profile</string>
+    <string name="eeg_appointment">EEG \n""Appointment</string>
+    <string name="find_neuro_match">Find \nNeuro Match</string>
+    <string name="show_neuro_match">Show \n""Neuro Match</string>
+    <string name="manual_match">Manual \n""Neuro Match</string>
+    <string name="NH_affiliate">NH Affiliate</string>
+    <string name="Instructions">Instructions</string>
+    <string name="select_user_type_welcome_text">Select the User Type option you wish to proceed</string>
+    <string name="desire_test_instructions">Desire Test</string>
+    <string name="Core_Belief_test_instructions">Core Belief Test</string>
+    <string name="server_client_id">338907245106-gvvufhni7iq86ks3d9grkqmtaqojuoo7.apps.googleusercontent.com</string>
+    <string name="Deep_religious_person">"\"I am a deeply religious person"\"</string>
+    <string name="agreeness">"How much do you agree with this statement?"</string>
+
+    <string name="facebook_app_id">869498666901957</string>
+    <string name="fb_login_protocol_scheme">fb869498666901957</string>
+
+    <string-array name="country_arrays">
+        <item>Select your nationality</item>
+        <item>India</item>
+    </string-array>
+    <string-array name="State_arrays">
+        <item>Select your present residence</item>
+        <item>India</item>
+        <item>Switzerland</item>
+        <item>Canada</item>
+        <item>Japan</item>
+        <item>Germany</item>
+        <item>Australia</item>
+        <item>United Kingdom</item>
+        <item>United States</item>
+        <item>Sweden</item>
+    </string-array>
+
+    <string-array name="Status_arrays">
+        <item>Select your marital status</item>
+        <item>Single</item>
+        <item>Widower</item>
+        <item>Divorcee</item>
+    </string-array>
+    <string-array name="duplicate_instrucation">
+        <item>Please complete the neuro test in 10 min</item>
+        <item>Hit the pause button when needed</item>
+        <item>You can reset the questions if needed</item>
+        <item>You can have a 20 min break time after 20 questions</item>
+        <item>Concentrate on the test</item>
+    </string-array>
+
+    <string-array name="religion_array">
+        <item>Select</item>
+    </string-array>
+
+    <string-array name="individual">
+        <item>Select</item>
+        <item>As an individual</item>
+        <item>Under an organization</item>
+    </string-array>
+
+    <string-array name="source_nh">
+        <item>Select</item>
+        <item>NH Agent</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="feature_array">
+        <item>Select</item>
+    </string-array>
+
+
+    <string-array name="caste_array">
+        <item>Select</item>
+    </string-array>
+
+    <string-array name="sub_caste_array">
+        <item>Select</item>
+    </string-array>
+    <string-array name="sub_caste_array_empty">
+        <item></item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_reports">Reports</string>
+    <string name="default_notification_channel_id">2342342325</string>
+    <string name="default_notification_channel_name">Messages</string>
+    <string name="fcm_message">Neuro Harmony</string>
+    <string name="social_filt">Social \n""Filter</string>
+
+
+    <!--    library for custom search and select-->
+    <string name="dialog_done_text">DONE</string>
+    <string name="dialog_cancel_text">CANCEL</string>
+    <string name="list_empty">No items to display</string>
+    <string name="select_entry">Select Entries</string>
+    <string name="validation_text">Please select atleast one option</string>
+    <string name="please_select_atleast">Please select atleast </string>
+    <string name="you_can_only_select_upto">You can only select upto </string>
+    <string name="option"> option</string>
+    <string name="options"> options</string>
+    <string name="select_all">select all</string>
+    <string name="de_select_all">deselect all</string>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.login.FixTestAsDefault">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relative_neuro"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/back_neuro_text"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_arrow_24dp"/>
+
+        <TextView
+            android:id="@+id/Neuro_harmony_default_test_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/medium"
+            android:layout_marginTop="30dp"
+            android:text="@string/neuro_test"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fix_as_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/relative_neuro"
+        android:padding="18dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:fontFamily="@font/mont_regular"
+        android:background="@drawable/edge_rounded_button"
+        android:visibility="visible"
+        android:text="Tests Taken"
+        android:textColor="@color/white" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_fix_as_default_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/set_fix_as_default_button"
+        android:layout_below="@+id/fix_as_default"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/background"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Nothing to show here!"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/nothinghere_tests"
+        android:textColor="#434343"
+        />
+
+
+    <Button
+        android:id="@+id/set_fix_as_default_button"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_button"
+        android:text="Set As Default"
+        android:textColor="@color/background"
+        android:textSize="17dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ui.login.PushNotification.PushNotifications">
+
+    <include
+        layout="@layout/notification_toolbar">
+    </include>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notification_list_recycler_view"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"/>
+</LinearLayout>

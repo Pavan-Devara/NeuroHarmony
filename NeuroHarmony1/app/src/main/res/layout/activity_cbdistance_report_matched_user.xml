@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".ui.login.CBDistanceReportMatchedUser">
+
+    <TextView
+        android:id="@+id/heading_cbdistancereportReport_matcheduser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/background"
+        android:fontFamily="@font/bold"
+        android:singleLine="true"
+        android:text="Core Belief Distance Report"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp" />
+
+    <ScrollView
+        android:id="@+id/scroll_cbdistancereportReport_matched_user"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="5"
+        android:layout_marginTop="30dp"
+        android:layout_height="match_parent">
+        <WebView
+            android:id="@+id/cbdistancereportReport_matched_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:fontFamily="@font/bold"
+            android:singleLine="true"
+            android:text="Core Belief Distance Report"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/okay_cbdistnaceReport"
+            android:text="OK"
+            android:textSize="18dp"
+            android:fontFamily="@font/bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/background"
+            android:background="@drawable/rounded_button"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_height="55dp"/>
+
+
+
+</LinearLayout>

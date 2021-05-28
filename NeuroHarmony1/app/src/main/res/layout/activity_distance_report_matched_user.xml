@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@color/background"
+tools:context=".ui.login.DistanceReportMatchedUser">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/back_distance_match_report2"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_arrow_24dp"/>
+
+<TextView
+    android:id="@+id/heading_distanceReport_matcheduser"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:background="@color/background"
+    android:fontFamily="@font/bold"
+    android:text="Distance Report"
+    android:textColor="@color/white"
+    android:layout_marginTop="10dp"
+    android:textSize="20dp" />
+    </RelativeLayout>
+
+<ScrollView
+    android:id="@+id/scroll_distanceReport_matched_user"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginTop="30dp"
+    android:layout_weight="5"
+    android:layout_height="match_parent">
+    <WebView
+        android:id="@+id/distanceReport_matched_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:justificationMode="inter_word"
+        android:text="text"
+        android:textColor="@color/white"
+        android:textSize="18dp"/>
+</ScrollView>
+    <Button
+        android:id="@+id/okay_distanceReport"
+        android:text="OK"
+        android:textSize="18dp"
+        android:fontFamily="@font/bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/background"
+        android:background="@drawable/rounded_button"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_height="55dp"/>
+
+
+
+</LinearLayout>

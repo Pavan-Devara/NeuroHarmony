@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="7dp"
+        android:background="@drawable/rounded_white_option_button">
+
+
+        <RelativeLayout
+            android:id="@+id/user_info_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_white_option_button">
+
+            <ImageView
+                android:id="@+id/new_user_tag"
+                android:layout_width="59dp"
+                android:layout_height="65dp"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/new_user"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/matched_user_photo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/profile_pic_placeholder" />
+
+            <Button
+                android:id="@+id/express_interest_button"
+                android:layout_width="wrap_content"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/matched_user_details"
+                android:layout_alignStart="@+id/matched_user_details"
+                android:layout_alignLeft="@+id/matched_user_details"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:textAllCaps="true"
+                android:fontFamily="@font/semibold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="invisible"
+                android:layout_weight="1"
+                android:textColor="@color/background"
+                android:background="@drawable/rounded_button_light_yellow"
+                android:text="Express Interest" />
+
+            <Button
+                android:id="@+id/revoke_interest_button"
+                android:layout_width="wrap_content"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/matched_user_details"
+                android:layout_alignStart="@+id/matched_user_details"
+                android:layout_alignLeft="@+id/matched_user_details"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="true"
+                android:textSize="13dp"
+                android:textColor="@color/background"
+                android:fontFamily="@font/semibold"
+                android:layout_marginBottom="20dp"
+                android:visibility="invisible"
+                android:layout_weight="1"
+                android:background="@drawable/light_pink_button"
+                android:text="REVOKE Interest" />
+
+            <TextView
+                android:id="@+id/requestAcceptedText"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/matched_user_details"
+                android:layout_alignStart="@+id/matched_user_details"
+                android:layout_alignLeft="@+id/matched_user_details"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/interest_accepted_background"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:fontFamily="@font/semibold"
+                android:text="Interest accepted"
+                android:textColor="@color/background"
+                android:textSize="13dp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/matched_user_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/matched_user_name"
+                android:layout_alignStart="@+id/matched_user_name"
+                android:layout_alignLeft="@+id/matched_user_name"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/regular"
+                android:text="24 F Single Hindu Nair"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/matched_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/matched_user_photo"
+                android:layout_toRightOf="@+id/matched_user_photo"
+                android:layout_weight="1"
+                android:fontFamily="@font/semibold"
+                android:text="Serin"
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="39dp"
+                android:layout_height="22dp"
+                android:layout_alignBottom="@+id/express_interest_button"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/rounded_button"
+                android:text="100%"
+                android:visibility="invisible"
+                android:textSize="10dp" />
+
+            <ImageView
+                android:id="@+id/bidirectional"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/button"
+                android:layout_alignRight="@+id/button"
+                android:layout_marginTop="15dp"
+                android:visibility="invisible"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/swap" />
+
+            <ImageView
+                android:id="@+id/single_directional"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:layout_marginTop="15dp"
+                android:layout_alignEnd="@+id/button"
+                android:layout_alignRight="@+id/button"
+                android:layout_marginEnd="1dp"
+                android:layout_marginRight="1dp"
+                android:src="@drawable/right_arrow" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

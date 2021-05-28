@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.neuro.neuroharmony">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission
+        android:name="android.permission.MEDIA_CONTENT_CONTROL"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name=".NeuroHarmonyApp"
+        android:allowBackup="true"
+        android:exported="true"
+        android:icon="@mipmap/neuro_harmony_logo"
+        android:label="@string/app_name"
+        android:launchMode="singleTop"
+        android:roundIcon="@mipmap/neuro_harmony_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name=".FullProfilePic"></activity>
+
+
+        <activity android:name=".ui.login.CompleteMatch.SettingsDoNotMacthActivity"></activity>
+        <activity android:name=".ui.login.CompleteMatch.FinalizeMatchFragment" />
+        <activity android:name=".ui.login.CompleteMatch.FinalizeMatchMenu" />
+        <activity android:name=".ui.login.CompleteMatch.FinalizeMatchScreen" />
+        <activity android:name=".ui.login.CompleteMatch.SearchPartner" />
+        <activity android:name=".ui.login.CompleteMatch.WhereDidMatch" />
+        <activity android:name=".ui.login.CompleteMatch.CompleteMatchActivity" />
+
+        <activity android:name=".ui.login.SocialProfile.ReligiousInfoVersion2"></activity>
+
+        <activity android:name=".ui.login.ViewPartnerProfile.ViewPartnerProfile" />
+
+        <activity android:name=".ui.login.SocialPreferences.SocialPreference" />
+        <activity android:name=".ui.login.PaymentFlow.PaymentDoNotGoBackScreen" />
+        <activity android:name=".ui.login.AfilliateWorkFlow.AffiliateSource" />
+        <activity android:name=".ui.login.AfilliateWorkFlow.AffiliateHomePage" />
+        <activity android:name=".ui.login.AfilliateWorkFlow.AffiliateDashboard" />
+        <activity android:name=".ui.login.AfilliateWorkFlow.AffiliateForms" />
+        <activity android:name=".ui.login.AfilliateWorkFlow.BankDetailsAffiliate" />
+        <activity android:name=".ui.login.PurchaseTokensDashboard.TransferTokensUsers" />
+        <activity android:name=".ui.login.BlockList.BlockedList" />
+        <activity android:name=".ui.login.PurchaseTokensDashboard.TokenPurchaseTransactions" />
+        <activity android:name=".ui.login.PaymentFlow.PaymentPackagesScreen" />
+        <activity android:name=".ui.login.PushNotification.PushNotifications" />
+        <activity android:name=".ui.login.FAQs.FAQ" />
+        <activity android:name=".ui.login.PrivacyPolicy" />
+        <activity android:name=".ui.login.social_profile_edit_tester_page" />
+        <activity android:name=".ui.login.PolicyAndTermsScreen" />
+        <activity android:name=".ui.login.SocialProfile.EducationAndProfession" />
+        <activity android:name=".ui.login.SocialProfile.FamilyInfo" />
+        <activity android:name=".ui.login.SocialProfile.LifeStyleInfo" />
+        <activity android:name=".ui.login.TermsAndConditions" />
+        <activity android:name=".ui.login.Feedback.FeedbackScreen" />
+        <activity android:name=".ui.login.Reports.Reports" />
+        <activity
+            android:name=".ui.login.NavigationMenu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.login.manualMatching.PartnerListMenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.manualMatching.PartnerList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.manualMatching.AddAPartner"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.manualMatching.ManualMatchingIntroScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.Chat_Requests"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.UserNeuroDesireProfileReport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.ChatWindow"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.ChatMenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.AddDataToFirestore"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.MatchedUserCoreBeliefGraphicalResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.FixTestAsDefault"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.DesireReportMatchedUser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.DistanceReportMatchedUser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.CBReportMatchedUser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.CBDistanceReportMatchedUser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.NeuroReportMatchedUser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.ViewMatchReportScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.UserDesireDistanceText"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.MatchedUserNeuroDesireGraphResultScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.NeuroMatchedUsers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.MatchedResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.NeuroViewReport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.DesiredProfileViewReport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.ReligiousInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.CoreBeliefViewReport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.TransactionDetailsScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.MakePaymentScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.PaymentSelectPackageScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.CoreBeliefScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.DesiredProfileScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.NeuroProfileScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.NeuroGraphResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.DesireGraphResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.CoreBeliefGraphicalResults"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.DesireTestQuestions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.CoreBeliefQuestionAndAnswers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.NeuroTestQuestions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.CoreBeliefIntroScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.DesireIntroScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.NeuroTestIntroScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.MobileEmailScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.HomePage1"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.login.Mobile_verification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.SignUpOtpVerification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.OtpVerification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.SelectUserTypeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.ResetPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.BioUpdateActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".utils.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!--
+ Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/neuro_icon" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/background" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.neuro.neuroharmony.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_q36B31vR2jvsig" />
+<!--            android:value="rzp_live_bip8iT67g5MKx1"/>-->
+
+
+    </application>
+
+</manifest>

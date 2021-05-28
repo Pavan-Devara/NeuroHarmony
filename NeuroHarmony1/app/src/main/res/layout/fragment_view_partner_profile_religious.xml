@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.login.ViewPartnerProfile.ViewPartnerProfileReligiousFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/partner_profile_font_color"
+            android:background="@android:color/transparent"
+            android:text="Religion"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/religion_partner_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont_semibold"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:text="Religion"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/partner_profile_font_color"
+            android:background="@android:color/transparent"
+            android:text="Caste"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/caste_partner_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont_semibold"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:text="Caste"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/partner_profile_font_color"
+            android:background="@android:color/transparent"
+            android:text="Sub-Caste"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/sub_caste_partner_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont_semibold"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:text="Sub-Caste"
+            android:textSize="17sp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/partner_profile_font_color"
+            android:background="@android:color/transparent"
+            android:text="Deeply Religious?"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/deeply_religious_partner_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont_semibold"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:text="Deeply Religious?"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/partner_profile_font_color"
+            android:background="@android:color/transparent"
+            android:text="Frequency of worship place visit"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/frequency_of_worship_partner_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont_semibold"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:text="Frequency of worship place visit"
+            android:textSize="17sp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/partner_profile_font_color"
+            android:background="@android:color/transparent"
+            android:text="Horoscope"
+            android:textSize="17sp"
+            />
+
+        <Button
+            android:id="@+id/horoscope_partner_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/mont_regular"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_button"
+            android:text="Not Available"
+            android:textAllCaps="true"
+            android:textSize="17sp"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

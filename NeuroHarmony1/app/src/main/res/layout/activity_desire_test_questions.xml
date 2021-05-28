@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.login.NeuroTestQuestions">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_weight="0.1"
+            android:id="@+id/Desire_questions_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/medium"
+            android:text="@string/desire_test_instructions"
+            android:textColor="@android:color/white"
+            android:textSize="32sp" />
+
+
+        <fragment
+            android:layout_weight="20"
+            android:id="@+id/questions_fragment"
+            android:name="com.neuro.neuroharmony.ui.login.QuestionsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Desire_questions_test"
+            android:layout_marginTop="5dp"></fragment>
+
+        <RadioGroup
+            android:layout_weight="1"
+            android:id="@+id/options_desire_layout"
+            android:layout_width="match_parent"
+            android:layout_height="211dp"
+            android:layout_below="@+id/questions_fragment"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:id="@+id/option_A_mild_desire_test"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginStart="30dp"
+                        android:button="@null"
+                        android:freezesText="true"
+                        android:background="@drawable/on_touch_change_button"
+                        android:fontFamily="@font/bold"
+                        android:gravity="center"
+                        android:text="A - Mild"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:id="@+id/option_A_strong_desire_test"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginStart="5dp"
+                        android:button="@null"
+                        android:freezesText="true"
+                        android:background="@drawable/on_touch_change_button"
+                        android:fontFamily="@font/bold"
+                        android:gravity="center"
+                        android:text="A - Strong"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:id="@+id/option_B_mild_desire_test"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginStart="30dp"
+                        android:button="@null"
+                        android:freezesText="true"
+                        android:background="@drawable/on_touch_change_button"
+                        android:fontFamily="@font/bold"
+                        android:gravity="center"
+                        android:text="B - Mild"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:id="@+id/option_B_strong_desire_test"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginStart="5dp"
+                        android:button="@null"
+                        android:freezesText="true"
+                        android:background="@drawable/on_touch_change_button"
+                        android:fontFamily="@font/bold"
+                        android:gravity="center"
+                        android:text="B - Strong"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RadioGroup>
+
+        <Button
+            android:layout_weight="0.3"
+            android:layout_gravity="center"
+            android:id="@+id/Desire_test_questions_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/bold"
+            android:padding="18dp"
+            android:text="SAVE &amp; CONTINUE"
+            android:textColor="@color/background"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>

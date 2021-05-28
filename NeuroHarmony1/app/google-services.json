@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "338907245106",
+    "firebase_url": "https://neuroharmony-1578921166027.firebaseio.com",
+    "project_id": "neuroharmony-1578921166027",
+    "storage_bucket": "neuroharmony-1578921166027.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338907245106:android:992ff32d8e10ea472c6a2b",
+        "android_client_info": {
+          "package_name": "com.neuro.neuroharmony"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "338907245106-rvvvj5minkkgvmdrdtohp39lt11gei01.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.neuro.neuroharmony",
+            "certificate_hash": "bd40b641ca8b1866e8d5994cdea0da5bd789e741"
+          }
+        },
+        {
+          "client_id": "338907245106-45q2rb7hioaaeuelmvtr8mt9p0k1jocf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfDYzv8X8u1yzXjHhCB7Zf2UTUYEGruhE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "338907245106-45q2rb7hioaaeuelmvtr8mt9p0k1jocf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "338907245106-60fdhjiipjrh47tg0mc2sv60612c63ga.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.nh.matchmaking"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

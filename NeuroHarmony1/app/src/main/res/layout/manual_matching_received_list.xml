@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+
+    <RelativeLayout
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/rounded_white_option_button"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/image_of_received"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/square_logo_girl"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Serin"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:id="@+id/name_of_user_received"
+            android:fontFamily="@font/medium"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/image_of_received"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24 | Single | F | Hindu | Nair"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/name_of_user_received"
+            android:fontFamily="@font/regular"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/details_receiveded_users"
+            android:layout_toRightOf="@+id/image_of_received"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Decline"
+            android:fontFamily="@font/semibold"
+            android:textSize="13dp"
+            android:id="@+id/received_decline_button_manual"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/background"
+            android:background="@drawable/light_pink_button"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/image_of_received"
+            android:layout_below="@id/details_receiveded_users"/>
+
+        <Button
+            android:id="@+id/received_accept_button_manual"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Accept"
+            android:fontFamily="@font/semibold"
+            android:textSize="13dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/background"
+            android:background="@drawable/light_yellow_background"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/received_decline_button_manual"
+            android:layout_below="@id/details_receiveded_users"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

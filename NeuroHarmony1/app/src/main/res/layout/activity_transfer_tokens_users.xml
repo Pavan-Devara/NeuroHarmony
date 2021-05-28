@@ -1,0 +1,170 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:weightSum="0.5"
+    tools:context=".ui.login.PurchaseTokensDashboard.TransferTokensUsers">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.1"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_transfer_tokens"
+            android:layout_width="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_arrow_24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="Token Transfer"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:background="@drawable/rounded_light_background_button"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/available_tokens_text_transfer_tokens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/semibold"
+            android:textSize="17dp"
+            android:layout_centerHorizontal="true"
+            android:text="Available Tokens"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/available_tokens_number_transfer_tokens"
+            android:layout_below="@+id/available_tokens_text_transfer_tokens"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mobile1"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textColor="@color/yellow"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_weight="0.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/semibold"
+            android:textSize="14sp"
+            android:textAllCaps="true"
+            android:paddingStart="2dp"
+            android:paddingLeft="2dp"
+            android:text="Number of Tokens to be transferred"
+            android:textColor="@android:color/white"/>
+
+        <EditText
+            android:id="@+id/tokens_to_be_transferred"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont_regular"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:maxLength="9"
+            android:inputType="number"
+            android:backgroundTint="#C5B5D3"
+            android:textColorHint="#C5B5D3"
+            android:hint="Enter token count"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_weight="0.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/semibold"
+            android:textSize="14sp"
+            android:textAllCaps="true"
+            android:paddingStart="2dp"
+            android:paddingLeft="2dp"
+            android:text="Mobile Number"
+            android:textColor="@android:color/white"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+
+        <EditText
+            android:id="@+id/mobile_number_to_transfer"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont_regular"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:paddingLeft="50dp"
+            android:inputType="number"
+            android:backgroundTint="#C5B5D3"
+            android:textColorHint="#C5B5D3"
+            android:hint="Enter mobile number"
+            android:textColor="@color/white"/>
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/country_code_picker_login"
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                />
+        </FrameLayout>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/transfer_tokens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/bold"
+        android:text="Transfer Token"
+        android:textColor="@color/background"
+        android:textSize="16sp" />
+</LinearLayout>

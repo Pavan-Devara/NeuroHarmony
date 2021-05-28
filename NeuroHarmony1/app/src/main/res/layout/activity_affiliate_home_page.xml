@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ui.login.AfilliateWorkFlow.AffiliateHomePage">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dashboard"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/dasboard_affiliate"
+        android:layout_marginTop="25dp"
+        android:textSize="17dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/semibold"
+        android:layout_gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/dasboard_affiliate"
+        android:clickable="true"
+        android:id="@+id/transactions_affiliate"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_white_option_button">
+
+        <ImageView
+            android:layout_width="65dp"
+            android:id="@+id/image_transactions_affilaite"
+            android:background="@drawable/show_match"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_height="65dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/image_transactions_affilaite"
+            android:layout_centerVertical="true"
+            android:text="Transactions Details"
+            android:textColor="#000000"
+            android:fontFamily="@font/regular"
+            android:textSize="17dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:clickable="true"
+        android:layout_below="@+id/transactions_affiliate"
+        android:id="@+id/affiliate_details_edit"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_white_option_button">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:id="@+id/affiliate_details_home"
+            android:background="@drawable/social_profile"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_height="65dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/affiliate_details_home"
+            android:layout_centerVertical="true"
+            android:text="Affiliate Details"
+            android:textColor="#000000"
+            android:fontFamily="@font/regular"
+            android:textSize="17dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/marquee3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/logout_affiliate"
+            android:layout_below="@+id/affiliate_details_edit"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:gravity="center"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="Note: Contact detail and Bank detail registration failed. Please update  your contact details and bank details"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:visibility="invisible"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+
+
+        <Button
+            android:id="@+id/logout_affiliate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/semibold"
+            android:text="Sign Out"
+            android:textColor="@color/background" />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

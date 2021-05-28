@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:id="@+id/fix_as_default_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_white_option_button"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/test_number"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/profile_pic_placeholder" />
+
+        <RadioButton
+            android:id="@+id/check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/fix_default_checkbox"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/session_Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/test_number"
+            android:layout_toRightOf="@+id/test_number"
+            android:fontFamily="@font/semibold"
+            android:justificationMode="inter_word"
+            android:text="Test 101"
+            android:textColor="@android:color/black"
+            android:textSize="17dp" />
+
+
+        <TextView
+            android:id="@+id/test_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mobile1"
+            android:layout_below="@id/session_Id"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/test_number"
+            android:justificationMode="inter_word"
+            android:text="completed"
+            android:textColor="#555555"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/fix_as_default_button"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/test_status"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_button_beige"
+            android:clickable="true"
+            android:fontFamily="@font/medium"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="Set as default"
+            android:textAllCaps="true"
+            android:textColor="@color/background" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

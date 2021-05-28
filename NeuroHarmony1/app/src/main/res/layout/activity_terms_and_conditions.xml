@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".ui.login.TermsAndConditions">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relative_terms"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/terms_back"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_arrow_24dp"/>
+
+        <TextView
+            android:id="@+id/yerms_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/background"
+            android:fontFamily="@font/bold"
+            android:text="Terms Of Use"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_above="@+id/radio_ters"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@+id/relative_terms"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <WebView
+                android:id="@+id/terms_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:justificationMode="inter_word"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:text="I confirm that I have read, understood and agree to abide by the policies mentioned here."
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:paddingLeft="10dp"
+        android:button="@drawable/checkbox_drawable"
+        android:textColor="@color/white"
+        android:fontFamily="@font/regular"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/agree_button"
+        android:id="@+id/radio_ters"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/agree_button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_button"
+        android:text="CONTINUE"
+        android:textColor="@color/background"
+        android:textSize="17dp" />
+
+</RelativeLayout>

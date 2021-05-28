@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.login.ViewPartnerProfile.ViewPartnerProfileEducationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/partner_profile_font_color"
+            android:background="@android:color/transparent"
+            android:text="Professional Qualification"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/professional_qualification_partner_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont_semibold"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:text="Professional Qualification"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/partner_profile_font_color"
+            android:background="@android:color/transparent"
+            android:text="Employement Status"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/employement_status_partner_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont_semibold"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:text="Employement Status"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/partner_profile_font_color"
+            android:background="@android:color/transparent"
+            android:text="Employement Status Description"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/employement_status_description_partner_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont_semibold"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:text="Employement Status Description"
+            android:textSize="17sp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/partner_profile_font_color"
+            android:background="@android:color/transparent"
+            android:text="Present Profession"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/present_profession_partner_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont_semibold"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:text="Present Profession"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/partner_profile_font_color"
+            android:background="@android:color/transparent"
+            android:text="Present Employer"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/present_employer_partner_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont_semibold"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:text="Present Employer"
+            android:textSize="17sp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/partner_profile_font_color"
+            android:background="@android:color/transparent"
+            android:text="Total Years of Professional Experience"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/total_experience_partner_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont_semibold"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:text="Total Years of Professional Experience"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/partner_profile_font_color"
+            android:background="@android:color/transparent"
+            android:text="Salary Range"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/salary_range_partner_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/mont_semibold"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:text="Salary Range"
+            android:textSize="17sp"
+            />
+    </LinearLayout>
+
+</ScrollView>

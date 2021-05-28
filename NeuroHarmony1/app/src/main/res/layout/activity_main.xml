@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@mipmap/bg"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.MainActivity">
+
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtext"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/regular"
+        android:layout_centerHorizontal="true"
+        android:textSize="15.5sp"
+        android:layout_marginTop="205dp"
+        />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="215dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="115dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/password2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NEW PASSWORD"
+            android:fontFamily="@font/bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="330dp"
+            android:textSize="17dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/signuppassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/medium"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#C5B5D3"
+                android:textColorHint="#C5B5D3"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:hint="Enter your new password"
+                android:inputType="textPassword" />
+
+            <ImageView
+                android:id="@+id/ivShowHidePass"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignEnd="@+id/signuppassword"
+                android:layout_alignRight="@+id/signuppassword"
+                android:src="@drawable/password_visibility_24dp" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/confirmpassword2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/bold"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textSize="17dp"
+            android:text="CONFIRM PASSWORD" />
+
+        <EditText
+            android:id="@+id/signupconfirmpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/medium"
+            android:textColorHint="#C5B5D3"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#C5B5D3"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:hint="Confirm your password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:textColor="#3C1A5B"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/bold"
+            android:textSize="17dp"
+            android:background="@drawable/rounded_button"
+            android:text="SIgn up"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="580dp"
+            android:text="Existing User?"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/signinhere"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Sign In!"
+            android:background="#00000000"
+            android:textSize="15dp"
+            android:textAllCaps="false"
+            android:textColor="#f2c013"
+            android:layout_marginTop="580dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

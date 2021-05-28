@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical"
+    tools:context=".ui.login.Reports.Reports">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:background="@color/background">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/back_report_six"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_arrow_24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/medium"
+            android:layout_marginTop="15dp"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"
+            android:text="Report"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="0.82"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/reports_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_pink" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/light_pink"
+        android:layout_weight="0.1">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/reports_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:minHeight="?attr/actionBarSize"
+            app:tabIndicatorColor="@android:color/transparent"
+            app:tabMode="fixed"
+            android:elevation="4dp"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabGravity="center" />
+    </RelativeLayout>
+
+</LinearLayout>

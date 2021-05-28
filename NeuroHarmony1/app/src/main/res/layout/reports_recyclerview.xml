@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:background="@color/light_pink"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/reports_points"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/selected_dot"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_gravity="left" />
+
+        <TextView
+            android:id="@+id/reports_description_points"
+             android:fontFamily="@font/medium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/reports_points"
+            android:layout_toRightOf="@+id/reports_points"
+            android:background="@color/light_pink"
+            android:justificationMode="inter_word"
+            android:text="Pavan"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</LinearLayout>

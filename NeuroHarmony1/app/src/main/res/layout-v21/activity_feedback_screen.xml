@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".ui.login.Feedback.FeedbackScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        >
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/feedback_core_match_report3"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_arrow_24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feedback"
+        android:layout_centerVertical="true"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_weight="8"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/feedback_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/feedback_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="5dp"
+            android:text="FEATURE"
+            android:fontFamily="@font/bold"
+            android:textSize="15dp"
+
+            />
+
+        <Spinner
+            android:id="@+id/feedback_spinner"
+            android:layout_width="match_parent"
+            android:backgroundTint="#C5B5D3"
+            android:popupBackground="#FFFFFF"
+            android:paddingLeft="5dp"
+            android:layout_height="40dp"
+            style="@android:style/Widget.Material.Light.Spinner.Underlined"
+            android:entries="@array/feature_array"
+            />
+
+
+        <TextView
+            android:id="@+id/feedback_textview_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="5dp"
+            android:text="COMMENT"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/bold"
+            android:textSize="15dp"
+
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:maxLength="1000"
+            android:gravity="top"
+            android:id="@+id/comment_feedback"
+            android:textColorHint="#C5B5D3"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#C5B5D3"
+            android:hint="Enter comment here..."
+            android:inputType="textMultiLine"
+            android:fontFamily="@font/light"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="SUBMIT"
+            android:id="@+id/submit_feedback"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/bold"
+            android:textSize="17dp"
+            android:background="@drawable/rounded_button"
+            android:layout_height="55dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.login.ViewPartnerProfile.ViewPartnerProfilePersonalFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/partner_profile_font_color"
+            android:background="@android:color/transparent"
+            android:text="Date of Birth"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/partner_profile_font_color"
+            android:background="@android:color/transparent"
+            android:text="Age"
+            android:textSize="17sp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/date_of_birth_partner_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/mont_semibold"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:text="Date of Birth"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/age_partner_profile"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/semibold"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:text="Age"
+            android:textSize="17sp"/>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/partner_profile_font_color"
+                android:background="@android:color/transparent"
+                android:text="Gender"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/partner_profile_font_color"
+                android:background="@android:color/transparent"
+                android:text="Marital Status"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/gender_partner_profile"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/black"
+                android:background="@android:color/transparent"
+                android:text="Height(cms)"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/marital_status_partner_profile"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/black"
+                android:background="@android:color/transparent"
+                android:text="Weight(kgs)"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/partner_profile_font_color"
+                android:background="@android:color/transparent"
+                android:text="Height(cms)"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/partner_profile_font_color"
+                android:background="@android:color/transparent"
+                android:text="Weight(kgs)"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/height_partner_profile"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/black"
+                android:background="@android:color/transparent"
+                android:text="Height(cms)"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/weight_partner_profile"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semibold"
+                android:textColor="@color/black"
+                android:background="@android:color/transparent"
+                android:text="Weight(kgs)"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/partner_profile_font_color"
+            android:background="@android:color/transparent"
+            android:text="Father's Name"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/father_name_partner_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont_semibold"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:text="Father's Name"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/partner_profile_font_color"
+            android:background="@android:color/transparent"
+            android:text="Current Residence"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/current_residence_partner_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont_semibold"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:text="Current Residence"
+            android:textSize="17sp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/partner_profile_font_color"
+            android:background="@android:color/transparent"
+            android:text="Hometown"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/hometown_partner_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont_semibold"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:text="Hometown"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/partner_profile_font_color"
+            android:background="@android:color/transparent"
+            android:text="Mother Tongue"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/mother_tongue_partner_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont_semibold"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:text="Mother Tongue"
+            android:textSize="17sp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/partner_profile_font_color"
+            android:background="@android:color/transparent"
+            android:text="E-mail Id"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/email_id_partner_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont_semibold"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:text="E-mail Id"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/partner_profile_font_color"
+            android:background="@android:color/transparent"
+            android:text="Primary Mobile Number"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/primary_mobile_partner_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mont_semibold"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:text="Primary Mobile Number"
+            android:textSize="17sp"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/partner_profile_font_color"
+            android:background="@android:color/transparent"
+            android:text="Alternative Mobile Number"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/alt_mobile_num_partner_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/mont_semibold"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:text="Not Available"
+            android:textSize="17sp"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>

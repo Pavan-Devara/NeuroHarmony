@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/light_pink"
+    tools:context=".ui.login.Reports.ReportsFragment">
+
+
+
+
+
+        <!-- TODO: Update blank fragment layout -->
+        <ImageView
+            android:id="@+id/reports_fragment_image"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="202dp"
+            android:minHeight="100dp"
+            android:src="@mipmap/profile_pic_placeholder" />
+
+        <TextView
+            android:paddingTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/bold"
+            android:textColor="@color/background"
+            android:textSize="20sp"
+            android:id="@+id/heading_reports"
+            android:layout_gravity="center"
+            android:gravity="bottom"
+            android:text="Sample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"/>
+
+
+        <ProgressBar
+            android:id="@+id/progressBar_reports"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:progressDrawable="@drawable/progress_bar_states"
+            android:layout_gravity="center"
+            android:isIndicator="false"
+            android:layout_width="100dp"
+            android:layout_height="5dp" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_marginTop="30dp"
+            android:overScrollMode="never"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <RatingBar
+                    android:id="@+id/rb_reports"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="true"
+                    android:progressDrawable="@drawable/rating_star"/>
+
+
+                <TextView
+                    android:id="@+id/reports_description"
+                    android:fontFamily="@font/medium"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/black"
+                    android:gravity="center"
+                    android:justificationMode="inter_word"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/reports_recycler_view"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/light_pink"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+
+    <RelativeLayout
+        android:id="@+id/confirmed_requests_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_white_option_button">
+
+        <TextView
+            android:id="@+id/confirmed_request_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/confirmed_requests_user_photo"
+            android:layout_toRightOf="@+id/confirmed_requests_user_photo"
+            android:layout_weight="1"
+            android:fontFamily="@font/semibold"
+            android:text="Alia"
+            android:textColor="#000000"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/confirmed_requests_user_photo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/profile_pic_placeholder" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/confirmed_requests_user_details"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp">
+        <Button
+            android:id="@+id/confirmed_request_viewMatch_button"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/light_yellow_background"
+            android:fontFamily="@font/semibold"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="View Match"
+            android:textColor="@color/background"
+            android:textSize="13dp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/request_chat_button"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_below="@+id/confirmed_requests_user_details"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/background"
+            android:background="@drawable/request_accept_button"
+            android:fontFamily="@font/semibold"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:textAllCaps="true"
+            android:text="Request Chat"
+            android:visibility="gone" />
+
+
+
+        <TextView
+            android:id="@+id/requested_chat"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/confirmed_requests_user_details"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/request_accept_button"
+            android:fontFamily="@font/semibold"
+            android:padding="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:text="Requested Chat"
+            android:textAllCaps="true"
+            android:textColor="@color/background"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/accepted_chat"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/confirmed_requests_user_details"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+android:layout_weight="1"
+            android:background="@drawable/request_accept_button"
+            android:fontFamily="@font/semibold"
+            android:singleLine="true"
+            android:padding="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="Accepted Chat"
+            android:textAllCaps="true"
+            android:textColor="@color/background"
+            android:visibility="gone" />
+
+            <Button
+                android:id="@+id/revoke_chat_button"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/confirmed_requests_user_details"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/background"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/request_accept_button"
+                android:fontFamily="@font/semibold"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:text="Revoke Chat"
+                android:textAllCaps="true"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:id="@+id/confirmed_requests_user_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/confirmed_request_user_name"
+            android:layout_alignStart="@+id/confirmed_request_user_name"
+            android:layout_alignLeft="@+id/confirmed_request_user_name"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/regular"
+            android:text="24 June 2020| 10AM"
+            android:textColor="#000000"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

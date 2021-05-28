@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@color/background"
+    tools:context=".ui.login.CoreBeliefIntroScreen">
+
+
+    <TextView
+        android:id="@+id/Core_belief_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/Core_Belief_test_instructions"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Core_belief_test_Instructions"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:layout_below="@+id/Core_belief_test"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:background="@drawable/edge_rounded_button"
+        android:text="@string/Instructions"
+        android:textColor="@android:color/white" />
+
+
+    <Button
+        android:id="@+id/core_instructions_continue"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/bold"
+        android:layout_marginBottom="30dp"
+        android:text="CONTINUE"
+        android:textColor="@color/background"
+        android:textSize="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_core_belief_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/core_instructions_continue"
+        android:layout_below="@+id/Core_belief_test_Instructions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@color/background"
+        android:paddingLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:paddingRight="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+</RelativeLayout>
